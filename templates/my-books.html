@@ -1,14 +1,15 @@
-<html>
-
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	{% for book in books %}
-	{{book.book_title}}
-	{{book.author}}
-	{{book.year_of_release}}
-	{{book.ownership}}
-	{{book.book_review}}
-	{% endfor %}
-
-	<head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BookSmart</h1>
+</body>
 </html>
+
+{% endblock %}
