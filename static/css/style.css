@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700');
+
+.title {
+    text-align: center;
+    font-family: 'Sriracha';
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+}
+
+.title-info {
+    text-align: center;
+    font-family: 'Sriracha';
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff;
+}
