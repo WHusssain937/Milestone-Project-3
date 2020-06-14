@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700');
 
 .title {
-    text-align: center;
+    text-align: left;
     font-family: 'Sriracha';
     font-weight: bold;
     font-size: 60px;
@@ -14,4 +14,54 @@
     font-weight: 500;
     font-size: 26px;
     color: #fff;
+}
+
+.sub-heading {
+    font-family: 'Sriracha';
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    display: inline-block;
+    color: #78909c;
+    text-decoration: underline;
+}
+
+.add-btn {
+    font-family: 'Sriracha';
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-color: #78909c;
+}
+
+.add-btn:hover {
+    background-color: #263238;
+}
+
+.my-books-btn {
+    font-family: 'Sriracha';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    background-color: #78909c;
+}
+
+.purchase-btn {
+    font-family: 'Sriracha';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    float: right;
+    background-color: #78909c;
+}
+
+.my-books-btn:hover {
+    background-color: #263238;
+}
+
+.purchase-btn:hover {
+    background-color: #263238;
 }
