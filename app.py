@@ -20,6 +20,10 @@ mongo = PyMongo(app)
 def my_books():
     return render_template("my-books.html", books=mongo.db.books.find())
 
+@app.route('/add_books')
+def add_books():
+    return render_template("add-books.html")
+
 
 
 if __name__ == '__main__':

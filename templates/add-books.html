@@ -1,0 +1,37 @@
+{% extends 'base.html' %} {% block content %}
+<div class="row">
+  <div class="col s6">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="book_title" name="book_title" type="text" class="validate" />
+            <label for="book_title">Book Title</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="author" name="author" type="text" class="validate" />
+            <label for="author">Author</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="year_release" type="text" class="datepicker" />
+            <label for="year_release">Year Released</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="ownership" type="text" class="validate" />
+            <label for="ownership">Do You Own This Book?</label>
+          </div>
+          <div class="input-field col s12">
+            <input id="genre" type="text" class="validate" />
+            <label for="genre">Genre</label>
+          </div>
+          <div class="input-field col s12">
+            <textarea id="book_review" name="book_review" class="materialize-textarea"></textarea>
+            <label for="book_review">Your Book Review/Summary</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
