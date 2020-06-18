@@ -22,8 +22,13 @@ def my_books():
 
 @app.route('/add_books')
 def add_books():
-    return render_template("add-books.html")
+    return render_template("add-books.html", books=mongo.db.books.find())
 
+@app.route('/insert_book', methods=['POST'])
+def insert_book():
+    books = mongo.db.books
+    books.insert_one(request.form.to_dict())
+    return redirect(url_for('my_books'))
 
 
 if __name__ == '__main__':

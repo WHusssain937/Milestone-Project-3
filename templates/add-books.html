@@ -1,21 +1,21 @@
 {% extends 'base.html' %} {% block content %}
 <div class="row">
-  <form class="col s6">
+  <form action="{{ url_for('insert_book') }}" method="POST" class="col s6">
     <div class="row input-field">
       <label for="book_title">Book Title</label>
-      <input id="book_title" type="text" class="validate" />
+      <input id="book_title" name="book_title" type="text" class="validate" />
     </div>
     <div class="row input-field">
       <label for="author">Author</label>
-      <input id="author" type="text" class="validate" />
+      <input id="author" name="author" type="text" class="validate" />
     </div>
     <div class="row input-field">
       <label for="year_of_release">Year of Release</label>
-      <input id="year_of_release" type="text" class="validate" />
+      <input id="year_of_release" name="year_of_release" type="text" class="validate" />
     </div>
     <div class="row input-field">
       <label for="genre">Genre</label>
-      <input id="genre" type="text" class="validate" />
+      <input id="genre" name="genre" type="text" class="validate" />
     </div>
     <div class="row">
       <label for="ownership">Do You Own This Book?</label>
@@ -26,6 +26,7 @@
       <label for="book_review">Your Book Review</label>
       <textarea
         id="book_review"
+        name="book_review"
         class="materialize-textarea"
         maxlength="1000"
       ></textarea>
@@ -41,11 +42,11 @@
 
     <div class="row">
       <button class="btn waves-effect waves-light" type="submit" name="action">
-        Submit
+        Add to Library
         <i class="material-icons right">send</i>
       </button>
     </div>
-    
+
   </form>
 </div>
 
