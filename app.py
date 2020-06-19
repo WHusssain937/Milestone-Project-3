@@ -30,6 +30,9 @@ def insert_book():
     books.insert_one(request.form.to_dict())
     return redirect(url_for('my_books'))
 
+@app.route('/books_to_purchase')
+def books_to_purchase():
+    return render_template("books-to-purchase.html", purchases=mongo.db.purchases.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
