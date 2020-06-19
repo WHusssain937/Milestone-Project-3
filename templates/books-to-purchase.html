@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block content %} 
+
+{% for purchase in purchases %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col s9">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">bookmark</i>
+            <strong>{{purchase.book_title}} {{purchase.rating}}</strong>
+          </div>
+          <div class="collapsible-body">
+            <span>
+              Author: {{purchase.author}}<br>Year Released: {{purchase.year_of_release}}
+              <br>Genre: {{purchase.genre}}<br>Book Review/Summary: {{purchase.book_review}}
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endfor %} 
+
+{% endblock %}
