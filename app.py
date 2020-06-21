@@ -38,6 +38,12 @@ def books_to_purchase():
 def add_to_purchase():
     return render_template("add-to-purchase.html", purchases=mongo.db.purchases.find())
 
+@app.route('/insert_to_purchase', methods=['POST'])
+def insert_to_purchase():
+    purchases = mongo.db.purchases
+    purchases.insert_one(request.form.to_dict())
+    return redirect(url_for('books_to_purchase'))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

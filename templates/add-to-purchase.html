@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <div class="row">
-  <form class="col s6">
+  <form action="{{ url_for('insert_to_purchase') }}" method="POST" class="col s6">
     <div class="row input-field">
       <label for="purchase_title">Book Title</label>
       <input id="purchase_title" name="purchase_title" type="text" class="validate" required />
@@ -24,7 +24,7 @@
       <input id="purchase_genre" name="purchase_genre" type="text" class="validate" required />
     </div>
     <div class="row input-field">
-      <label for="why_buy">Your Book Review</label>
+      <label for="why_buy">Why Do You Want This Book?</label>
       <textarea
         id="why_buy"
         name="why_buy"
