@@ -88,6 +88,11 @@ def update_to_purchase(purchase_id):
     })
     return redirect(url_for('books_to_purchase'))  
 
+@app.route('/delete_to_purchase/<purchase_id>')
+def delete_to_purchase(purchase_id):
+    mongo.db.purchases.remove({'_id': ObjectId(purchase_id)})
+    return redirect(url_for('books_to_purchase'))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
