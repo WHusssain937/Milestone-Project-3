@@ -44,6 +44,11 @@ def insert_to_purchase():
     purchases.insert_one(request.form.to_dict())
     return redirect(url_for('books_to_purchase'))
 
+@app.route('/edit_book/<book_id>')
+def edit_book(book_id):
+    the_book = mongo.db.books.find_one({'_id': ObjectId(book_id)})
+    return render_template("edit-book.html", book=the_book)
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
