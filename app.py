@@ -14,7 +14,7 @@ app.config['MONGODB_NAME'] = os.environ.get('MONGODB_NAME')
 
 mongo = PyMongo(app)
 
-
+# MyBooks Section
 @app.route('/')
 @app.route('/my_books')
 def my_books():
@@ -30,6 +30,7 @@ def insert_book():
     books.insert_one(request.form.to_dict())
     return redirect(url_for('my_books'))
 
+# Books to Purchase Section
 @app.route('/books_to_purchase')
 def books_to_purchase():
     return render_template("books-to-purchase.html", purchases=mongo.db.purchases.find())
@@ -44,6 +45,7 @@ def insert_to_purchase():
     purchases.insert_one(request.form.to_dict())
     return redirect(url_for('books_to_purchase'))
 
+# MyBooks Functions for editing and deleting 
 @app.route('/edit_book/<book_id>')
 def edit_book(book_id):
     the_book = mongo.db.books.find_one({'_id': ObjectId(book_id)})
@@ -66,6 +68,25 @@ def update_book(book_id):
 def delete_book(book_id):
     mongo.db.books.remove({'_id': ObjectId(book_id)})
     return redirect(url_for('my_books'))
+  
+# Books To Purchase Functions for editing and deleting
+@app.route('/edit_to_purchase/<purchase_id>')
+def edit_to_purchase(purchase_id):
+    to_purchase = mongo.db.purchases.find_one({'_id': ObjectId(purchase_id)})
+    return render_template("edit-to-purchase.html", purchase=to_purchase)    
+
+@app.route('/update_to_purchase/<purchase_id>', methods=['POST'])
+def update_to_purchase(purchase_id):
+    purchases = mongo.db.purchases
+    purchases.update( {'_id': ObjectId(purchase_id)},
+    {
+        'purchase_title':request.form.get('purchase_title'),
+        'name_of_author':request.form.get('name_of_author'),
+        'release_year': request.form.get('release_year'),
+        'purchase_genre': request.form.get('purchase_genre'),
+        'why_buy':request.form.get('why_buy')
+    })
+    return redirect(url_for('books_to_purchase'))  
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
