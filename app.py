@@ -49,6 +49,24 @@ def edit_book(book_id):
     the_book = mongo.db.books.find_one({'_id': ObjectId(book_id)})
     return render_template("edit-book.html", book=the_book)
 
+@app.route('/update_book/<book_id>', methods=['POST'])
+def update_book(book_id):
+    books = mongo.db.books
+    books.update( {'_id': ObjectId(book_id)},
+    {
+        'book_title':request.form.get('book_title'),
+        'author':request.form.get('author'),
+        'year_of_release': request.form.get('year_of_release'),
+        'genre': request.form.get('genre'),
+        'book_review':request.form.get('book_review')
+    })
+    return redirect(url_for('my_books'))
+
+@app.route('/delete_book/<book_id>')
+def delete_book(book_id):
+    mongo.db.books.remove({'_id': ObjectId(book_id)})
+    return redirect(url_for('my_books'))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
