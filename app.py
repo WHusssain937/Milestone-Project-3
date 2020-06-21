@@ -34,6 +34,10 @@ def insert_book():
 def books_to_purchase():
     return render_template("books-to-purchase.html", purchases=mongo.db.purchases.find())
 
+@app.route('/add_to_purchase')
+def add_to_purchase():
+    return render_template("add-to-purchase.html", purchases=mongo.db.purchases.find())
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
