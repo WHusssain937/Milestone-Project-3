@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700|Bree+Serif=100,200,300,400,500,600,700');
 
 .title {
     text-align: left;
@@ -17,51 +17,29 @@
 }
 
 .sub-heading {
-    font-family: 'Sriracha';
-    font-weight: 500;
+    font-family: 'Bree Serif';
+    font-weight: bold;
     font-size: 35px;
     text-align: center;
     display: inline-block;
     color: #78909c;
-    text-decoration: underline;
 }
 
-.add-btn {
-    font-family: 'Sriracha';
-    font-weight: 500;
-    font-size: 20px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    background-color: #78909c;
+/*--------------------------------------------Add Books*/
+
+form {
+    font-family: 'Bree Serif';
+    font-weight: bold;
+    font-size: 17px;
+    border: 5px solid #78909c;
 }
 
-.add-btn:hover {
-    background-color: #263238;
+.form-heading {
+    font-family: 'Bree Serif';
+    font-weight: bold;
+    font-size: 28px;
 }
 
-.my-books-btn {
-    font-family: 'Sriracha';
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-    float: right;
-    background-color: #78909c;
-}
 
-.purchase-btn {
-    font-family: 'Sriracha';
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 20px;
-    float: right;
-    background-color: #78909c;
-}
 
-.my-books-btn:hover {
-    background-color: #263238;
-}
 
-.purchase-btn:hover {
-    background-color: #263238;
-}
