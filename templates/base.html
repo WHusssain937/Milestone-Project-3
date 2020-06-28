@@ -11,43 +11,50 @@
 <body>
 	<header>
 		<div class="container-fluid">
-			<div class="row blue-grey lighten-1">
-				<div class="col s6">
-					<h2 class="title"><i class="book-icon fas fa-book"></i>BookSmart</h2>
+			<nav>
+				<div class="nav-wrapper">
+					<div class="row blue-grey lighten-1">
+						<div class="col s6">
+							<a href="#" class="brand-logo title"><i class="fas fa-book"></i>BookSmart</a>
+						</div>
+						<div class="col s6">
+							<div class="title-info">
+								Create A Library and Record The Books You Own and Would Like
+								To Buy
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s2">
+								<a href="#">My Library</a>
+							</div>
+							<div class="col s5">
+								<ul id="nav-mobile" class="left hide-on-med-and-down">
+									<li><a href="#">My Books</a></li>
+									<li><a href="#">Books To Purchase</a></li>
+								</ul>
+							</div>
+							<div class="col s5">
+								<ul class="right hide-on-med-and-down">
+									<li><a href="#">Add Book</a></li>
+									<li><a href="#"></a>Add Book To Purchase</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col s6">
-					<p class="title-info">
-						Create A Library and Record The Books You Own and Would Like To
-						Buy
-					</p>
-				</div>
-			</div>
+			</nav>
 		</div>
 	</header>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col s8">
-				<h4 class="sub-heading">My Library</h4>
-                  <a class="btn-floating btn-large waves-effect waves-light blue-grey lighten-1"><i class="material-icons">add</i></a>
-			</div>
-			<div class="col s4">
-				<ul class="tabs">
-					<li class="tab col s6"><a href="#">My Books</a></li>
-					<li class="tab col s6"><a class="active" href="#">Books To Purchase</a></li>
-				</ul>
-			</div>
-		</div>
+	{% block content %} {% endblock %}
 
-		{% block content %} {% endblock %}
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function () {
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
         $(".collapsible").collapsible();
       });
-		</script>
+	</script>
 </body>
 
 </html>

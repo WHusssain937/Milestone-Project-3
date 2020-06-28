@@ -9,20 +9,10 @@
 }
 
 .title-info {
-    text-align: center;
     font-family: 'Sriracha';
     font-weight: 500;
-    font-size: 26px;
+    font-size: 20px;
     color: #fff;
-}
-
-.sub-heading {
-    font-family: 'Bree Serif';
-    font-weight: bold;
-    font-size: 35px;
-    text-align: center;
-    display: inline-block;
-    color: #78909c;
 }
 
 /*--------------------------------------------Add Books*/
@@ -31,7 +21,18 @@ form {
     font-family: 'Bree Serif';
     font-weight: bold;
     font-size: 17px;
-    border: 5px solid #78909c;
+}
+
+.book-form {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 .form-heading {
