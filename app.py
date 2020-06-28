@@ -14,6 +14,8 @@ app.config['MONGODB_NAME'] = os.environ.get('MONGODB_NAME')
 
 mongo = PyMongo(app)
 
+
+
 # MyBooks Section
 @app.route('/')
 @app.route('/my_books')
@@ -22,7 +24,8 @@ def my_books():
 
 @app.route('/add_books')
 def add_books():
-    return render_template("add-books.html", books=mongo.db.books.find())
+    books = mongo.db.books
+    return render_template("add-books.html", books=books.find())
 
 @app.route('/insert_book', methods=['POST'])
 def insert_book():
@@ -30,14 +33,17 @@ def insert_book():
     books.insert_one(request.form.to_dict())
     return redirect(url_for('my_books'))
 
-# Books to Purchase Section
+# Books to Purchase
 @app.route('/books_to_purchase')
 def books_to_purchase():
-    return render_template("books-to-purchase.html", purchases=mongo.db.purchases.find())
+    return render_template("books-to-purchase.html", 
+                            purchases=mongo.db.purchases.find())
+
 
 @app.route('/add_to_purchase')
 def add_to_purchase():
-    return render_template("add-to-purchase.html", purchases=mongo.db.purchases.find())
+    purchases = mongo.db.purchases
+    return render_template("add-to-purchase.html", purchases=purchases.find())
 
 @app.route('/insert_to_purchase', methods=['POST'])
 def insert_to_purchase():
