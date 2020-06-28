@@ -12,10 +12,10 @@
 	<header>
 		<div class="container-fluid">
 			<nav>
-				<div class="nav-wrapper">
-					<div class="row blue-grey lighten-1">
+				<div class="nav-wrapper blue-grey darken-2">
+					<div class="row">
 						<div class="col s6">
-							<a href="#" class="brand-logo title"><i class="fas fa-book"></i>BookSmart</a>
+							<a href="{{ url_for('my_books') }}" class="brand-logo title"><i class="fas fa-book"></i>BookSmart</a>
 						</div>
 						<div class="col s6">
 							<div class="title-info">
@@ -24,19 +24,24 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col s2">
-								<a href="#">My Library</a>
+							<div class="col s2 blue-grey lighten-1">
+								<a href="{{ url_for('my_books') }}" class="nav-heading">My Library</a>
 							</div>
-							<div class="col s5">
+							<div class="col s5 blue-grey lighten-1">
 								<ul id="nav-mobile" class="left hide-on-med-and-down">
-									<li><a href="#">My Books</a></li>
-									<li><a href="#">Books To Purchase</a></li>
+									<li><a href="{{ url_for('my_books') }}" class="nav-link active"><i class="fas fa-book-open"></i> My
+											Books</a>
+									</li>
+									<li><a href="{{ url_for('books_to_purchase') }}" class="nav-link"><i class="fas fa-shopping-basket"></i> Books To
+											Purchase</a>
+									</li>
 								</ul>
 							</div>
-							<div class="col s5">
+							<div class="col s5 blue-grey lighten-1">
 								<ul class="right hide-on-med-and-down">
-									<li><a href="#">Add Book</a></li>
-									<li><a href="#"></a>Add Book To Purchase</li>
+									<li><a href="{{ url_for('add_books') }}" class="nav-link"><i class="fas fa-plus-circle"></i> Add Book</a></li>
+									<li><a href="{{ url_for('add_to_purchase') }}" class="nav-link"><i class="fas fa-plus-circle"></i> Add Book To
+											Purchase</a></li>
 								</ul>
 							</div>
 						</div>
