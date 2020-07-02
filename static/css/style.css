@@ -30,7 +30,6 @@
 }
 
 /*--------------------------------------------My Books/Books To Purchase*/
-
 .page-heading {
     font-family: 'Sriracha';
     font-weight: bold;
@@ -38,7 +37,7 @@
     color: #455a64;
     text-decoration: underline;
     text-decoration-color: #455a64;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .collapsible-header {
