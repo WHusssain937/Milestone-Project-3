@@ -90,7 +90,8 @@ def update_to_purchase(purchase_id):
         'name_of_author':request.form.get('name_of_author'),
         'release_year': request.form.get('release_year'),
         'purchase_genre': request.form.get('purchase_genre'),
-        'why_buy':request.form.get('why_buy')
+        'why_buy':request.form.get('why_buy'),
+        'purchase_link':request.form.get('purchase_link')
     })
     return redirect(url_for('books_to_purchase'))  
 
