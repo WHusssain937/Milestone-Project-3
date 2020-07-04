@@ -1,7 +1,9 @@
 {% extends 'base.html' %} {% block content %}
-<div class="row">
-  <form action="{{ url_for('update_book', book_id=book._id) }}" method="POST" class="col s6">
-    <div class="row input-field">
+
+<div class="book-form">
+  <form action="{{ url_for('update_book', book_id=book._id) }}" method="POST">
+    <h4 class="form-heading">Edit Book</h4>
+    <div class="row input-field form-row">
       <label for="book_title">Book Title</label>
       <input
         id="book_title"
@@ -12,7 +14,7 @@
         required
       />
     </div>
-    <div class="row input-field">
+    <div class="row input-field form-row">
       <label for="author">Author</label>
       <input
         id="author"
@@ -23,7 +25,7 @@
         required
       />
     </div>
-    <div class="row input-field">
+    <div class="row input-field form-row">
       <label for="year_of_release">Year of Release</label>
       <input
         id="year_of_release"
@@ -34,7 +36,7 @@
         required
       />
     </div>
-    <div class="row input-field">
+    <div class="row input-field form-row">
       <label for="genre">Genre</label>
       <input
         id="genre"
@@ -45,28 +47,29 @@
         required
       />
     </div>
-    <div class="row input-field">
+    <div class="row input-field form-row">
       <label for="book_review">Your Book Review</label>
       <textarea
         id="book_review"
         name="book_review"
         class="materialize-textarea"
         maxlength="1000"
-      >{{book.book_review}}
+      >
+{{book.book_review}}
     </textarea
       >
     </div>
-    <div class="row">
-      <label for="rating">Rate This Book</label>
-      <i class="small material-icons">star_outline</i>
-      <i class="small material-icons">star_outline</i>
-      <i class="small material-icons">star_outline</i>
-      <i class="small material-icons">star_outline</i>
-      <i class="small material-icons">star_outline</i>
+
+    <div id="rating-system" class="row form-row">
+      <label for="ratings">Rate This Book</label>
     </div>
 
-    <div class="row">
-      <button class="btn waves-effect waves-light" type="submit" name="action">
+    <div class="row btn-align">
+      <button
+        class="btn waves-effect waves-light submit-btn"
+        type="submit"
+        name="action"
+      >
         Update
         <i class="material-icons right">send</i>
       </button>
