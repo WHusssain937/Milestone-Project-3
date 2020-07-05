@@ -35,10 +35,10 @@
     font-weight: bold;
     font-size: 28px;
     color: #455a64;
-    text-align: center;
     text-decoration: underline;
     text-decoration-color: #455a64;
-    margin-top: 6rem;
+    margin-top: 5rem;
+    margin-left: 0.5rem;
 }
 
 .collapsible-header {
@@ -62,7 +62,7 @@
     color: #fff;
 }
 
-/*--------------------------------------------Add Books/Purchase*/
+/*--------------------------------------------Add Books/Purchase/Edit Forms*/
 
 .book-form {
     display: block;

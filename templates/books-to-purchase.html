@@ -11,11 +11,14 @@
 						<strong>{{purchase.purchase_title}}</strong>
 					</div>
 					<div class="col s3">
-                    <a href="{{purchase.purchase_link}}"><i class="material-icons function-icon">launch</i></a>
-						<a
-							href="{{url_for('edit_to_purchase', purchase_id=purchase._id)}}"><i class="material-icons function-icon">create</i></a>
-						<a
-							href="{{url_for('delete_to_purchase', purchase_id=purchase._id)}}"><i class="material-icons function-icon">delete</i></a>
+						<a href="{{purchase.purchase_link}}" class="tooltipped" data-position="top"
+							data-tooltip="Link To Buy"><i class="material-icons function-icon">launch</i></a>
+						<a href="{{url_for('edit_to_purchase', purchase_id=purchase._id)}}" class="tooltipped"
+							data-position="top"
+							data-tooltip="Edit"><i class="material-icons function-icon">create</i></a>
+						<a href="{{url_for('delete_to_purchase', purchase_id=purchase._id)}}" class="tooltipped"
+							data-position="top"
+							data-tooltip="Delete"><i class="material-icons function-icon">delete</i></a>
 					</div>
 				</div>
 				<div class="collapsible-body">
