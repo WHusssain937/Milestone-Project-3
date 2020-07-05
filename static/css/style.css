@@ -30,6 +30,12 @@
 }
 
 /*--------------------------------------------My Books/Books To Purchase*/
+
+.collapsible {
+    width: 90%;
+    margin-left: 4rem;
+}
+
 .page-heading {
     font-family: 'Sriracha';
     font-weight: bold;
