@@ -6,11 +6,12 @@
 		<ul class="collapsible">
 			<li>
 				<div class="collapsible-header">
-					<div class="col s10">
-						<i class="material-icons">book</i>
+					<div class="col s9">
+						<i class="material-icons">local_library</i>
 						<strong>{{purchase.purchase_title}}</strong>
 					</div>
-					<div class="col s2">
+					<div class="col s3">
+                    <a href="{{purchase.purchase_link}}"><i class="material-icons function-icon">launch</i></a>
 						<a
 							href="{{url_for('edit_to_purchase', purchase_id=purchase._id)}}"><i class="material-icons function-icon">create</i></a>
 						<a
@@ -22,7 +23,7 @@
             Author: {{purchase.name_of_author}}<br />Year Released:
             {{purchase.release_year}} <br />Genre:
             {{purchase.purchase_genre}}<br />Why Do You Want This Book?:
-            {{purchase.why_buy}}<br />Link To Buy: <a href="">{{purchase.purchase_link}}</a>
+            {{purchase.why_buy}}
           </span>
 				</div>
 			</li>
