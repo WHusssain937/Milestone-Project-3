@@ -66,7 +66,8 @@ def update_book(book_id):
         'author':request.form.get('author'),
         'year_of_release': request.form.get('year_of_release'),
         'genre': request.form.get('genre'),
-        'book_review':request.form.get('book_review')
+        'book_review':request.form.get('book_review'),
+        'rating':request.form.get('book.rating')
     })
     return redirect(url_for('my_books'))
 

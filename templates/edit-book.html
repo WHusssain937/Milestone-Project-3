@@ -60,8 +60,9 @@
       >
     </div>
 
-    <div id="rating-system" class="row form-row">
-      <label for="ratings">Rate This Book</label>
+    <div class="row input-field form-row">
+      <label for="rating">Rate This Book From 0 to 5</label>
+      <input id="rating" name="rating" type="number" min="0" max="5" value="{{book.rating}}" required />
     </div>
 
     <div class="row btn-align">
