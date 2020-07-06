@@ -65,10 +65,15 @@
 .function-icon {
     margin-left: 2rem;
     color: #fff;
+    padding-top: 5px;
 }
 
 .rate {
     float: right;
+}
+
+.rate-icon {
+    padding-top: 10px;
 }
 
 /*--------------------------------------------Add Books/Purchase/Edit Forms*/
