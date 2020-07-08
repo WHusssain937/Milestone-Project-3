@@ -3,11 +3,14 @@
 /*--------------------------------------------Title/Navbar*/
 
 .title {
-    text-align: left;
     font-family: 'Sriracha';
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     color: #fff;
+}
+
+.title-icon {
+    margin-right: 0.5rem;
 }
 
 .title-info {
@@ -15,12 +18,19 @@
     font-weight: 500;
     font-size: 20px;
     color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.logo {
+    margin-bottom: 0;
 }
 
 .nav-heading {
     font-family: 'Sriracha';
     font-weight: 500;
-    font-size: 25px;  
+    font-size: 25px;
+    margin-left: 0.5rem  
 }
 
 .nav-link {
@@ -43,7 +53,6 @@
     color: #455a64;
     text-decoration: underline;
     text-decoration-color: #455a64;
-    margin-top: 5rem;
     margin-left: 0.5rem;
 }
 
@@ -68,12 +77,12 @@
     padding-top: 5px;
 }
 
-.rate {
-    float: right;
+.expand-icon {
+    padding-top: 10px;
 }
 
-.rate-icon {
-    padding-top: 10px;
+.rate {
+    float: right;
 }
 
 /*--------------------------------------------Add Books/Purchase/Edit Forms*/
