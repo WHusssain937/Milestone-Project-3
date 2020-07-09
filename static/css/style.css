@@ -1,137 +1,165 @@
-@import url('https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700|Bree+Serif=100,200,300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700|Bree+Serif=100,200,300,400,500,600,700");
 
 /*--------------------------------------------Title/Navbar*/
 
 .title {
-    font-family: 'Sriracha';
-    font-weight: bold;
-    font-size: 40px;
-    color: #fff;
+  font-family: "Sriracha";
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
 }
 
 .title-icon {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .title-info {
-    font-family: 'Sriracha';
-    font-weight: 500;
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    padding-top: 1rem;
+  font-family: "Sriracha";
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .logo {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .nav-heading {
-    font-family: 'Sriracha';
-    font-weight: 500;
-    font-size: 25px;
-    margin-left: 0.5rem  
+  font-family: "Sriracha";
+  font-weight: 500;
+  font-size: 25px;
+  margin-left: 0.5rem;
 }
 
 .nav-link {
-    font-family: 'Sriracha';
-    font-weight: 500;
-    font-size: 18px;
+  font-family: "Sriracha";
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /*--------------------------------------------My Books/Books To Purchase*/
 
 .collapsible {
-    width: 90%;
-    margin-left: 4rem;
+  width: 90%;
+  margin-left: 4rem;
+}
+
+@media (max-width: 576px) {
+  .collapsible {
+    width: 100%;
+    margin-left: 2rem;
+  }
 }
 
 .page-heading {
-    font-family: 'Sriracha';
-    font-weight: bold;
-    font-size: 28px;
-    color: #455a64;
-    text-decoration: underline;
-    text-decoration-color: #455a64;
-    margin-left: 0.5rem;
+  font-family: "Sriracha";
+  font-weight: bold;
+  font-size: 28px;
+  color: #455a64;
+  text-decoration: underline;
+  text-decoration-color: #455a64;
+  margin-left: 0.5rem;
 }
 
 .collapsible-header {
-    font-family: 'Sriracha';
-    font-size: 23px;
-    color: #fff;
-    background-color: #455a64;
-    border: 1px solid #455a64;
+  font-family: "Sriracha";
+  font-size: 23px;
+  color: #fff;
+  background-color: #455a64;
+  border: 1px solid #455a64;
 }
 
 .collapsible-body {
-    font-family: 'Sriracha';
-    font-size: 20px;
-    color: #fff;
-    background-color: #455a64;
+  font-family: "Sriracha";
+  font-size: 20px;
+  color: #fff;
+  background-color: #455a64;
 }
 
 .function-icon {
-    margin-left: 1rem;
-    color: #fff;
-    padding-top: 5px;
+  color: #fff;
+  padding-top: 5px;
+  margin-left: 3rem;
 }
 
-.expand-icon {
-    padding-top: 10px;
+@media (max-width: 963px) {
+  .function-icon {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+}
+
+.function-to-buy-icon {
+    color: #fff;
+    padding-top: 5px;
+    margin-left: 2.5rem;
+}
+
+@media (max-width: 916px) {
+  .function-to-buy-icon {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
 }
 
 .rate {
-    float: right;
+  float: right;
+}
+
+@media (max-width: 963px) {
+  .rate {
+    float: left;
+  }
 }
 
 /*--------------------------------------------Add Books/Purchase/Edit Forms*/
 
 .book-form {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 form {
-    display: inline-block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    text-align: left;
-    min-width: 60%;
-    border: 6px double #455a64;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  text-align: left;
+  min-width: 60%;
+  border: 6px double #455a64;
 }
 
 .form-heading {
-    font-family: 'Sriracha';
-    font-weight: bold;
-    font-size: 28px;
-    color: #455a64;
-    text-decoration: underline;
-    text-decoration-color: #455a64;
-    text-align: center;
+  font-family: "Sriracha";
+  font-weight: bold;
+  font-size: 28px;
+  color: #455a64;
+  text-decoration: underline;
+  text-decoration-color: #455a64;
+  text-align: center;
 }
 
 .form-row {
-    font-family: 'Sriracha';
-    font-weight: bold;
-    font-size: 20px;
-    color: #455a64;
+  font-family: "Sriracha";
+  font-weight: bold;
+  font-size: 20px;
+  color: #455a64;
 }
 
 .btn-align {
-    text-align: center;
+  text-align: center;
 }
 
 .submit-btn {
-    font-family: 'Sriracha';
-    font-weight: 500;
-    font-size: 17px;
-    background-color: #455a64;
+  font-family: "Sriracha";
+  font-weight: 500;
+  font-size: 17px;
+  background-color: #455a64;
 }
 
-.submit-btn:hover{
-    background-color: #78909c;
+.submit-btn:hover {
+  background-color: #78909c;
 }
-
