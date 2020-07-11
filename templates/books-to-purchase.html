@@ -6,11 +6,11 @@
 		<ul class="collapsible">
 			<li>
 				<div class="collapsible-header">
-					<div class="col s8">
-						<i class="material-icons">local_library</i>
+					<div class="col s5 m6 l8">
+						<i class="material-icons hide-on-small-only">local_library</i>
 						<strong>{{purchase.purchase_title}}</strong>
 					</div>
-					<div class="col s4">
+					<div class="col s7 m6 l4">
 						<a href="{{purchase.purchase_link}}" class="tooltipped" data-position="top"
 							data-tooltip="Link To Buy"><i class="material-icons function-to-buy-icon">launch</i></a>
 						<a href="{{url_for('edit_to_purchase', purchase_id=purchase._id)}}" class="tooltipped"
