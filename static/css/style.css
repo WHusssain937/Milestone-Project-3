@@ -99,34 +99,24 @@
   background-color: #455a64;
 }
 
-.function-icon {
+.rate {
+    padding-top: 5px;
+    margin-left: 1rem;
+}
+
+.edit-icon {
   color: #fff;
   padding-top: 5px;
-  margin-left: 2.5rem;
 }
 
-@media (max-width: 576px) {
-  .function-icon {
-    margin-left: 0.4rem;
-  }
-}
-
-.function-to-buy-icon {
+.delete-icon {
   color: #fff;
   padding-top: 5px;
-  margin-left: 2.5rem;
 }
 
-@media (max-width: 576px) {
-  .function-to-buy-icon {
-    margin-left: 0.6rem;
-  }
-}
-
-@media (max-width: 320px) {
-  .function-to-buy-icon {
-    margin-left: 0.2rem;
-  }
+.link-icon {
+  color: #fff;
+  padding-top: 5px;
 }
 
 /*--------------------------------------------Add Books/Purchase/Edit Forms*/
