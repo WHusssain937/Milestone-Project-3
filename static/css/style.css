@@ -131,20 +131,9 @@
 
 /*--------------------------------------------Add Books/Purchase/Edit Forms*/
 
-.book-form {
-  display: block;
-  text-align: center;
-}
-
 form {
-  display: inline-block;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  text-align: left;
-  width: 60%;
-  border: 6px double #455a64;
+  margin-top: 3rem;
+  border: 10px double #455a64;
 }
 
 .form-heading {
@@ -160,7 +149,6 @@ form {
 .form-row {
   font-family: "Sriracha";
   font-weight: bold;
-  font-size: 20px;
   color: #455a64;
 }
 

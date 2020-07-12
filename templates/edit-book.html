@@ -1,74 +1,91 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="book-form">
-	<form action="{{ url_for('update_book', book_id=book._id) }}" method="POST">
-		<h4 class="form-heading">Edit Book</h4>
-		<div class="row input-field form-row">
-			<label for="book_title">Book Title</label>
-			<input
-				id="book_title"
-			    name="book_title"
-                type="text"
-		        class="validate"
-			    value="{{book.book_title}}"
-		        required />
-        </div>
-			<div class="row input-field form-row">
-				<label for="author">Author</label>
-				<input
-                    id="author"
-                    name="author"
-                    type="text"
-                    class="validate"
-                    value="{{book.author}}"
-                    required />
-            </div>
-				<div class="row input-field form-row">
-					<label for="year_of_release">Year of Release</label>
-					<input
-				        id="year_of_release"
-				        name="year_of_release"
-				        type="text"
-				        class="validate"
-				        value="{{book.year_of_release}}"
-				        required
-				      />
-				    </div>
-					<div class="row input-field form-row">
-						<label for="genre">Genre</label>
-						<input
-					        id="genre"
-					        name="genre"
-					        type="text"
-					        class="validate"
-					        value="{{book.genre}}"
-					        required
-					      />
-					    </div>
-						<div class="row input-field form-row">
-							<label for="book_review">Your Book Review</label>
-							<textarea
-						        id="book_review"
-						        name="book_review"
-						        class="materialize-textarea"
-						        maxlength="1000"
-						      >
+<div class="row">
+  <form
+    class="col s12 m8 offset-m2"
+    action="{{ url_for('update_book', book_id=book._id) }}"
+    method="POST"
+  >
+    <h4 class="form-heading">Edit Book</h4>
+    <div class="col s12 input-field form-row">
+      <label for="book_title">Book Title</label>
+      <input
+        id="book_title"
+        name="book_title"
+        type="text"
+        class="validate"
+        value="{{book.book_title}}"
+        required
+      />
+    </div>
+    <div class="col s12 input-field form-row">
+      <label for="author">Author</label>
+      <input
+        id="author"
+        name="author"
+        type="text"
+        class="validate"
+        value="{{book.author}}"
+        required
+      />
+    </div>
+    <div class="col s12 input-field form-row">
+      <label for="year_of_release">Year of Release</label>
+      <input
+        id="year_of_release"
+        name="year_of_release"
+        type="text"
+        class="validate"
+        value="{{book.year_of_release}}"
+        required
+      />
+    </div>
+    <div class="col s12 input-field form-row">
+      <label for="genre">Genre</label>
+      <input
+        id="genre"
+        name="genre"
+        type="text"
+        class="validate"
+        value="{{book.genre}}"
+        required
+      />
+    </div>
+    <div class="col s12 input-field form-row">
+      <label for="book_review">Your Book Review</label>
+      <textarea
+        id="book_review"
+        name="book_review"
+        class="materialize-textarea"
+        maxlength="1000"
+      >
 						{{book.book_review}}
-						    </textarea>
-						</div>
+						    </textarea
+      >
+    </div>
 
-						<div class="row input-field form-row">
-							<label for="rating">Rate This Book From 0 to 5</label>
-							<input id="book.rating" name="book.rating" type="number" min="0" max="5" value="{{book.rating}}" required />
-						    </div>
-                <div class="row btn-align">
-	             <button
-                    class="btn waves-effect waves-light submit-btn"
-                    type="submit"
-                    name="action">Update<i class="material-icons right">send</i>
-                 </button>
-                </div>
-        </form>
+    <div class="col s12 input-field form-row">
+      <label for="rating">Rate This Book From 0 to 5</label>
+      <input
+        id="book.rating"
+        name="book.rating"
+        type="number"
+        min="0"
+        max="5"
+        value="{{book.rating}}"
+        required
+      />
+    </div>
+    <div class="row btn-align">
+      <button
+        class="btn waves-effect waves-light submit-btn"
+        type="submit"
+        name="action"
+      >
+        Update<i class="material-icons right">send</i>
+      </button>
+    </div>
+  </form>
 </div>
 
 {% endblock %}

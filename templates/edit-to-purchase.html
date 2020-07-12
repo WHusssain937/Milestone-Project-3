@@ -1,12 +1,13 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="book-form">
+<div class="row">
   <form
+    class="col s12 m8 offset-m2"
     action="{{ url_for('update_to_purchase', purchase_id=purchase._id) }}"
     method="POST"
   >
     <h4 class="form-heading">Edit Book To Purchase</h4>
-    <div class="row input-field form-row">
+    <div class="col s12 input-field form-row">
       <label for="purchase_title">Book Title</label>
       <input
         id="purchase_title"
@@ -16,7 +17,7 @@
         required
       />
     </div>
-    <div class="row input-field form-row">
+    <div class="col s12 input-field form-row">
       <label for="name_of_author">Author</label>
       <input
         id="name_of_author"
@@ -26,7 +27,7 @@
         required
       />
     </div>
-    <div class="row input-field form-row">
+    <div class="col s12 input-field form-row">
       <label for="release_year">Year of Release</label>
       <input
         id="release_year"
@@ -36,7 +37,7 @@
         required
       />
     </div>
-    <div class="row input-field form-row">
+    <div class="col s12 input-field form-row">
       <label for="purchase_genre">Genre</label>
       <input
         id="purchase_genre"
@@ -46,7 +47,7 @@
         required
       />
     </div>
-    <div class="row input-field form-row">
+    <div class="col s12 input-field form-row">
       <label for="why_buy">Why Do You Want This Book?</label>
       <textarea
         id="why_buy"
@@ -57,9 +58,14 @@
 {{purchase.why_buy}}</textarea
       >
     </div>
-    <div class="row input-field form-row">
+    <div class="col s12 input-field form-row">
       <label for="purchase_link">Link To Buy:</label>
-      <input id="purchase_link" name="purchase_link" type="url" value="{{purchase.purchase_link}}" />
+      <input
+        id="purchase_link"
+        name="purchase_link"
+        type="url"
+        value="{{purchase.purchase_link}}"
+      />
     </div>
     <div class="row btn-align">
       <button
