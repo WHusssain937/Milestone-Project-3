@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700|Bree+Serif=100,200,300,400,500,600,700");
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+
 /*--------------------------------------------Title/Navbar*/
 
 .title {
@@ -155,4 +165,22 @@ form {
 
 .submit-btn:hover {
   background-color: #78909c;
+}
+
+
+/*--------------------------------------------Footer*/
+
+.social-link {
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+
+@media (max-width: 576px) {
+  .social-link {
+    margin-left: 2rem;
+  }
+}
+
+.social-link:hover {
+  color: #78909c;
 }

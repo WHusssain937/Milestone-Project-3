@@ -16,7 +16,8 @@
 		<div class="container-fluid">
 			<div class="row blue-grey darken-2 logo">
 				<div class="col s12 m6">
-					<a href="{{ url_for('my_books') }}" class="title"><i class="fas fa-book title-icon"></i>BookSmart</a>
+					<a href="{{ url_for('my_books') }}"
+						class="title"><i class="fas fa-book title-icon"></i>BookSmart</a>
 				</div>
 				<div class="col s12 m6">
 					<p class="title-info">
@@ -28,7 +29,8 @@
 			<nav>
 				<div class="nav-wrapper blue-grey lighten-1">
 					<a href="{{ url_for('my_books') }}" class="nav-heading">My Library</a>
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<a href="#" data-activates="mobile-demo"
+						class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul class="right hide-on-med-and-down">
 						<li><a href="{{ url_for('my_books') }}" class="nav-link"><i class="fas fa-book-open"></i> My
 								Books</a></li>
@@ -38,28 +40,50 @@
 						</li>
 						<li><a href="{{ url_for('add_books') }}" class="nav-link"><i class="fas fa-plus-circle"></i> Add
 								Book</a></li>
-						<li><a href="{{ url_for('add_to_purchase') }}" class="nav-link"><i class="fas fa-plus-circle"></i>
+						<li><a href="{{ url_for('add_to_purchase') }}"
+								class="nav-link"><i class="fas fa-plus-circle"></i>
 								Add Book To
 								Purchase</a></li>
 					</ul>
 					<ul class="side-nav blue-grey lighten-1" id="mobile-demo">
-						<li><a href="{{ url_for('my_books') }}" class="nav-link white-text active"><i class="fas fa-book-open white-text"></i> My
+						<li><a href="{{ url_for('my_books') }}"
+								class="nav-link white-text active"><i class="fas fa-book-open white-text"></i> My
 								Books</a></li>
 						<li><a href="{{ url_for('books_to_purchase') }}"
 								class="nav-link white-text"><i class="fas fa-shopping-basket white-text"></i> Books To
 								Purchase</a>
 						</li>
-						<li><a href="{{ url_for('add_books') }}" class="nav-link white-text"><i class="fas fa-plus-circle white-text"></i> Add
+						<li><a href="{{ url_for('add_books') }}"
+								class="nav-link white-text"><i class="fas fa-plus-circle white-text"></i> Add
 								Book</a></li>
-						<li><a href="{{ url_for('add_to_purchase') }}" class="nav-link white-text"><i class="fas fa-plus-circle white-text"></i>
+						<li><a href="{{ url_for('add_to_purchase') }}"
+								class="nav-link white-text"><i class="fas fa-plus-circle white-text"></i>
 								Add Book To
 								Purchase</a></li>
 					</ul>
 				</div>
 			</nav>
 	</header>
+    
+	<main>
+		{% block content %} {% endblock %}
+	</main>
 
-	{% block content %} {% endblock %}
+	<footer class="page-footer blue-grey darken-2">
+		<div class="container">
+			<div class="row">
+                <div class="col s4">
+					<a class="grey-text text-lighten-3" href="https://www.instagram.com/"><i class="fab fa-instagram social-link" aria-hidden="true"></i></a>
+				</div>
+                <div class="col s4">
+					<a class="grey-text text-lighten-3" href="https://www.snapchat.com/l/en-gb/"><i class="fab fa-snapchat social-link" aria-hidden="true"></i></a>
+				</div>
+                <div class="col s4">
+					<a class="grey-text text-lighten-3" href="https://twitter.com/explore"><i class="fab fa-twitter social-link" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

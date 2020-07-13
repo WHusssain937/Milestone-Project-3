@@ -1,4 +1,5 @@
 {% extends 'base.html' %} {% block content %}
+
 <h4 class="page-heading">My Books To Purchase</h4>
 {% for purchase in purchases %}
 <div class="container-fluid">
@@ -14,8 +15,7 @@
 						<a href="{{purchase.purchase_link}}" class="tooltipped" data-position="top"
 							data-tooltip="Link To Buy"><i class="material-icons link-icon">launch</i></a>
 						<a href="{{url_for('edit_to_purchase', purchase_id=purchase._id)}}" class="tooltipped"
-							data-position="top"
-							data-tooltip="Edit"><i class="material-icons edit-icon">create</i></a>
+							data-position="top" data-tooltip="Edit"><i class="material-icons edit-icon">create</i></a>
 						<a href="{{url_for('delete_to_purchase', purchase_id=purchase._id)}}" class="tooltipped"
 							data-position="top"
 							data-tooltip="Delete"><i class="material-icons delete-icon">delete</i></a>
@@ -23,14 +23,15 @@
 				</div>
 				<div class="collapsible-body">
 					<span>
-            Author: {{purchase.name_of_author}}<br />Year Released:
-            {{purchase.release_year}} <br />Genre:
-            {{purchase.purchase_genre}}<br />Why Do You Want This Book?:
-            {{purchase.why_buy}}
-          </span>
+              Author: {{purchase.name_of_author}}<br />Year Released:
+              {{purchase.release_year}} <br />Genre:
+              {{purchase.purchase_genre}}<br />Why Do You Want This Book?:
+              {{purchase.why_buy}}
+            </span>
 				</div>
 			</li>
 		</ul>
 	</div>
 </div>
+
 {% endfor %} {% endblock %}
