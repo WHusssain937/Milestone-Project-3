@@ -4,20 +4,24 @@
 {% for purchase in purchases %}
 <div class="container-fluid">
 	<div class="row">
+		<!--Book Entry Collapsible -->
 		<ul class="collapsible">
 			<li>
 				<div class="collapsible-header">
 					<div class="col s6 m8 l9">
+						<!--Book Title & Rating -->
 						<i class="material-icons hide-on-small-only">local_library</i>
 						<strong>{{purchase.purchase_title}}</strong>
 					</div>
 					<div class="col s6 m4 l3">
+						<!--Buy Book Link Icon -->
 						<a href="{{purchase.purchase_link}}" class="tooltipped" data-position="top"
 							data-tooltip="Link To Buy"><i class="material-icons link-icon">launch</i></a>
+						<!--Edit Icon -->
 						<a href="{{url_for('edit_to_purchase', purchase_id=purchase._id)}}" class="tooltipped"
 							data-position="top" data-tooltip="Edit"><i class="material-icons edit-icon">create</i></a>
-						<!-- Modal Trigger -->
-                        <a class="modal-trigger tooltipped" href="#modal-confirm2" data-position="top"
+						<!--Delete Modal Trigger -->
+						<a class="modal-trigger tooltipped" href="#modal-confirm2" data-position="top"
 							data-tooltip="Delete"><i class="material-icons delete-icon">delete</i></a>
 
 						<!-- Modal Structure -->
@@ -31,6 +35,7 @@
 						</div>
 					</div>
 				</div>
+				<!--Collapsible Information -->
 				<div class="collapsible-body">
 					<span>
               Author: {{purchase.name_of_author}}<br />Year Released:

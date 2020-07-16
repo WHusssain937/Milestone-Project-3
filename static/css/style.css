@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700|Bree+Serif=100,200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700|Concert+One=100,200,300,400,500,600,700");
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 main {
-    flex: 1 0 auto;
-  }
+  flex: 1 0 auto;
+}
 
 /*--------------------------------------------Title/Navbar*/
 
@@ -62,7 +62,6 @@ main {
   font-size: 18px;
 }
 
-
 /*--------------------------------------------My Books/Books To Purchase*/
 
 .collapsible {
@@ -111,8 +110,8 @@ main {
 }
 
 .rate {
-    padding-top: 5px;
-    margin-left: 1rem;
+  padding-top: 5px;
+  margin-left: 1rem;
 }
 
 .edit-icon {
@@ -143,7 +142,7 @@ main {
 }
 
 .modal-action {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /*--------------------------------------------Add Books/Purchase/Edit Forms*/
@@ -184,12 +183,11 @@ form {
   background-color: #78909c;
 }
 
-
 /*--------------------------------------------Footer*/
 
 .social-link {
-    font-size: 2rem;
-    margin-left: 5rem;
+  font-size: 2rem;
+  margin-left: 5rem;
 }
 
 @media (max-width: 576px) {
