@@ -8,14 +8,14 @@
 		<ul class="collapsible">
 			<li>
 				<div class="collapsible-header">
-					<div class="col s10 m9 l10">
+					<div class="col s8 m10 l10">
 						<!--Book Title & Rating -->
 						<i class="material-icons hide-on-small-only">local_library</i>
 						<strong>{{book.book_title}}</strong>
-						<span class="tooltipped hide-on-med-and-down" data-position="top"
+						<span class="tooltipped hide-on-small-only" data-position="top"
 										data-tooltip="Rating""><i class="material-icons rate">thumbs_up_down</i>{{book.rating}}</span>
 					</div>
-					<div class="col s2 m3 l2">
+					<div class="col s4 m2 l2">
 						<!--Edit Icon -->
 						<a href="{{url_for('edit_book', book_id=book._id)}}" class="tooltipped" data-position="top"
 							data-tooltip="Edit"><i class="material-icons icons edit-icon">create</i></a>
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 				<!--Collapsible Information -->
-				<div class="collapsible-body">
+				<div class="collapsible-body center-align">
 					<span>Author: {{book.author}}<br /> Year Released: {{book.year_of_release}}
             <br />Genre: {{book.genre}}<br />Book Review/Summary:
             {{book.book_review}}</span>

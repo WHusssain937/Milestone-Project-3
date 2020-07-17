@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700|Concert+One=100,200,300,400,500,600,700");
 
+
+/*--------------------------------------------Additional*/
 body {
   display: flex;
   min-height: 100vh;
@@ -10,6 +12,14 @@ main {
   flex: 1 0 auto;
 }
 
+.row .col {
+    padding: 0;
+}
+
+.row .col.s9 {
+    margin-left: 0;
+}
+
 /*--------------------------------------------Title/Navbar*/
 
 .title {
@@ -17,6 +27,7 @@ main {
   font-weight: bold;
   font-size: 40px;
   color: #fff;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -67,6 +78,7 @@ main {
 .collapsible {
   width: 90%;
   margin-left: 4rem;
+  margin-bottom: 0; 
 }
 
 @media (max-width: 768px) {
@@ -99,6 +111,12 @@ main {
   color: #fff;
   background-color: #455a64;
   border: 1px solid #455a64;
+}
+
+@media (max-width: 576px) {
+  .collapsible-header i {
+    width: 1.5rem;
+  }
 }
 
 .collapsible-body {
@@ -135,6 +153,12 @@ main {
 .link-icon {
   color: #fff;
   padding-top: 5px;
+}
+
+@media (max-width: 640px) {
+  .link-icon {
+    margin-left: 0.5rem;
+  }
 }
 
 .link-icon:hover {
