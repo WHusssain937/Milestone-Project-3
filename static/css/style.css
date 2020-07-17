@@ -37,7 +37,8 @@ main {
 }
 
 .title-icon {
-  margin-right: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -155,7 +156,7 @@ main {
   padding-top: 5px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 576px) {
   .link-icon {
     margin-left: 0.5rem;
   }

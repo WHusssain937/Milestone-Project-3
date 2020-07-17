@@ -2,11 +2,15 @@
 
 <!--Edit Book Form -->
 <div class="row">
-	<form class="col s12 m8 offset-m2" action="{{ url_for('update_book', book_id=book._id) }}" method="POST">
-		<h4 class="form-heading">Edit Book</h4>
-		<div class="col s12 input-field form-row">
-			<label for="book_title">Book Title</label>
-			<input
+  <form
+    class="col s12 m8 offset-m2"
+    action="{{ url_for('update_book', book_id=book._id) }}"
+    method="POST"
+  >
+    <h4 class="form-heading">Edit Book</h4>
+    <div class="col s12 input-field form-row">
+      <label for="book_title">Book Title</label>
+      <input
         id="book_title"
         name="book_title"
         type="text"
@@ -15,9 +19,9 @@
         required
       />
     </div>
-			<div class="col s12 input-field form-row">
-				<label for="author">Author</label>
-				<input
+    <div class="col s12 input-field form-row">
+      <label for="author">Author</label>
+      <input
         id="author"
         name="author"
         type="text"
@@ -26,9 +30,9 @@
         required
       />
     </div>
-				<div class="col s12 input-field form-row">
-					<label for="year_of_release">Year of Release</label>
-					<input
+    <div class="col s12 input-field form-row">
+      <label for="year_of_release">Year of Release</label>
+      <input
         id="year_of_release"
         name="year_of_release"
         type="text"
@@ -37,9 +41,9 @@
         required
       />
     </div>
-					<div class="col s12 input-field form-row">
-						<label for="genre">Genre</label>
-						<input
+    <div class="col s12 input-field form-row">
+      <label for="genre">Genre</label>
+      <input
         id="genre"
         name="genre"
         type="text"
@@ -48,21 +52,19 @@
         required
       />
     </div>
-						<div class="col s12 input-field form-row">
-							<label for="book_review">Your Book Review</label>
-							<textarea
-	        id="book_review"
-	        name="book_review"
-	        class="materialize-textarea"
-	        maxlength="1000"
-	      >
-							{{book.book_review}}
-							    </textarea>
-						</div>
+    <div class="col s12 input-field form-row">
+      <label for="book_review">Your Book Review</label>
+      <textarea
+        id="book_review"
+        name="book_review"
+        class="materialize-textarea"
+        maxlength="1000"
+      >{{book.book_review}}</textarea>
+    </div>
 
-						<div class="col s12 input-field form-row">
-							<label for="rating">Rate This Book From 0 to 5</label>
-							<input
+    <div class="col s12 input-field form-row">
+      <label for="rating">Rate This Book From 0 to 5</label>
+      <input
         id="book.rating"
         name="book.rating"
         type="number"
@@ -72,16 +74,16 @@
         required
       />
     </div>
-							<div class="row btn-align">
-								<button
+    <div class="row btn-align">
+      <button
         class="btn waves-effect waves-light submit-btn"
         type="submit"
         name="action"
       >
         Update<i class="material-icons right">send</i>
       </button>
-							</div>
-	</form>
+    </div>
+  </form>
 </div>
 
 {% endblock %}
