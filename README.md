@@ -37,3 +37,47 @@ add wireframes link here when inputed
 Surface
 The primary background color of site is dark blue which is in the header, footer and collapsible, but the navbar and sidenav background colour is light grey as I believe this offered the site a great balance. The color of all the text except for the forms is white and the font is Sriracha as it worked well with the page and the font is stylish but easily readable. There is a double border around the forms, which helps make it look like the book is a form.
 
+Features
+
+Existing Features
+
+Materialize Navbar
+The links in the navbar will allow the user to go to the page they require.
+
+Materialize Side Nav
+The sidenav will appear on smaller screens such as tablets and mobiles and when the links in the sidenav are clicked it will take you to the page you require.
+
+Materialize Collapsible
+The collapsible will display the book title, rating and function icons that the user will see and when clicked will expand and display the information about the book.
+
+Edit Function Icon
+This icon when clicked will take the user to the edit page for the book to make any changes and update.
+
+Delete Function Icon
+This icon when clicked will show the delete confirmation modal.
+
+Delete Confirmation Modal
+This modal will appear when the user clicks the delete icon, the user will need to confirm that he wants to delete the book.
+
+Add Book Forms
+These forms will allow the user to add books they own or want to buy.
+
+Edit Forms
+These forms will allow the user to change and edit the information they inputed.
+
+Add To Library Button
+This button will submit the add book forms and redirect back to either the My Books or Books to Purchase section depending on what form is submitted.
+
+Update Button
+This button will update the changes that are made from the edit forms and redirect back to either the My Books or Books to Purchase section depending on what form is submitted.
+
+Footer Social Links
+The links in the footer will allow the user to visit the site's social media platforms.
+
+Features Left to Implement
+
+Upload Image 
+In future projects, I would like to add a upload a image button to allow the user to upload a image of the book.
+
+Star Rating System
+I would like to added a star rating system instead of a numbered one in future projects.
