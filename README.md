@@ -115,3 +115,14 @@ This framework was used to build the site.
 
 MongoDB
 This database was used to store the information inputting in the site.
+
+Testing
+
+HTML
+Gitpod found some minor problems with the template files such as doctype html missing at the top of the templates.
+
+CSS Validator 
+The validator found no issues with the file.
+
+Python Checker https://extendsclass.com/python-tester.html
+This website check the python code and found no syntax errors.
