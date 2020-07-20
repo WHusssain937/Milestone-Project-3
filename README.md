@@ -81,3 +81,37 @@ In future projects, I would like to add a upload a image button to allow the use
 
 Star Rating System
 I would like to added a star rating system instead of a numbered one in future projects.
+
+Technologies Used
+
+These are the following languages, frameworks and libraries used in this project:
+
+HTML
+This was used to build the site and input content.
+
+CSS
+This was the second language used to style the site.
+
+Python
+This was the third language used to run the backend of the website and its functions
+
+Jquery
+This library was used to to allow the Materialize modal, collapsible, sidenav and tooltips to work.
+
+Materialize
+This framework was used to create a structure to the site and it was used to create the navbar, sidenav, collapsible and more.
+
+Material icons
+This icon library was used to place icons in my project such as the icons in the collapsible.
+
+Font Awesome
+This icon library was also used to place icons in my project such as the icons in the navbar and footer.
+
+Google Fonts
+This project was used to inlude the font 'Sriracha' in my project.
+
+Flask Framework
+This framework was used to build the site.
+
+MongoDB
+This database was used to store the information inputting in the site.
