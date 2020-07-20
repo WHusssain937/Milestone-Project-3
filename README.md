@@ -118,8 +118,8 @@ This database was used to store the information inputting in the site.
 
 Testing
 
-HTML
-Gitpod found some minor problems with the template files such as doctype html missing at the top of the templates.
+HTML Validator
+The first error that the validator picked up was that the type attribute for the script tag was unnecessary. Another error that was picked up was that in the edit book form, the rating's label for attribute wasn't the same as the input id for rating. These were the only two errors picked up during HTML validation.
 
 CSS Validator 
 The validator found no issues with the file.
