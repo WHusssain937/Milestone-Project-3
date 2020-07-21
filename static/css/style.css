@@ -129,6 +129,10 @@ main {
   color: #455a64;
   margin-left: 0.5rem;
   font-size: 30px;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 .add-icon:hover {
@@ -217,13 +221,16 @@ form {
 
 /*--------------------------------------------Footer*/
 
-.social-link {
-  font-size: 2rem;
-  margin-left: 5rem;
+.page-footer {
   transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+}
+
+.social-link {
+  font-size: 2rem;
+  margin-left: 5rem;
 }
 
 @media (max-width: 576px) {
