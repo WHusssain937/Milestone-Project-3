@@ -12,11 +12,11 @@ main {
 }
 
 .row .col {
-    padding: 0;
+  padding: 0;
 }
 
 .row .col.s9 {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 /*--------------------------------------------Title/Navbar*/
@@ -36,8 +36,8 @@ main {
 }
 
 .title-icon {
-    margin-right: 0.5rem;
-    margin-left: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -78,7 +78,7 @@ main {
 .collapsible {
   width: 90%;
   margin-left: 4rem;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
@@ -126,13 +126,13 @@ main {
   background-color: #455a64;
 }
 .add-icon {
-    color: #455a64;
-    margin-left: 0.5rem;
-    font-size: 30px;
+  color: #455a64;
+  margin-left: 0.5rem;
+  font-size: 30px;
 }
 
-.add-icon:hover{
-    color: #78909c;
+.add-icon:hover {
+  color: #78909c;
 }
 
 .rate {
@@ -220,6 +220,10 @@ form {
 .social-link {
   font-size: 2rem;
   margin-left: 5rem;
+  transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 576px) {

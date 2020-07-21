@@ -170,3 +170,7 @@ I will then be present with two options yes or no, I will select no, the modal w
 Then, I will again click on the delete icon and this time select yes and the modal will close.
 I can now see that the book entry has been deleted
 This will be the same experience as the deleting a my book entry. 
+
+Websites & Devices Testing
+
+This site was tested on different devices such as a large desktop screen, laptop, Samsung S10+, Iphone 6/7/8, Ipad Pro and Ipad and on multiple web browsers such as Google Chrome, Internet Exployer and Firefox to make sure that it was responsive and compatible. I also had my friends and family tests it on their phones and laptops and it was responsive 
