@@ -25,7 +25,7 @@ Scope
 The site is to provide users who would like a online library to record the books they own and would like to buy by filling in a form with information on the book. The user is also able to delete any books they no longer own or would not like to buy anymore and edit information on the books they have added.
 
 Structure
-The main pages on the site is the my books and books to purchase section which will display the books that the users adds, when a book is added it will be displayed in a collapsible with edit and delete icons and the rating of the book the user gives to it or in the wishlist collapsible it will be a link to buy icon. When the collapsible is clicked it will dropdown with the information on the book such as the author and the review from the user. When the users wants to add a book, he can just click on the add book links in the navbar which will take the user to the forms to add either a book they own or would like to buy. The add book forms will allow the user to fill in information about the book such as the title, author, year of release and genre, when the user adds a book they own they can also add a personal review and rating of the book in the form and if they are adding a book to purchase then instead in the form they can add why they want to buy the book and a link for the book to buy. When the edit icon is clicked, it will take the user to the same form as the add books form, but with the information already inputed and once the user has made the changes they want they can click update. When the delete icon is clicked in the collapsible it will bring up a modal which will confirm the deletion of the book.
+The main pages on the site is the 'My Books' and 'Wishlist' section which will display the books that the users adds, when a book is added it will be displayed in a collapsible with edit and delete icons and the rating of the book the user gives to it or in the wishlist section, the collapsible will have an link to buy icon instead. When the collapsible is clicked it will dropdown with the information on the book such as the author and the review from the user. When the users wants to add a book, he can just click on the add book links in the navbar which will take the user to the forms to add either a book they own or would like to buy. The add book forms will allow the user to fill in information about the book such as the title, author, year of release and genre, when the user adds a book they own they can also add a personal review and rating of the book in the form and if they are adding a book to the 'Wishlist' section then instead in the form they can add why they want to buy the book and a link for the book to buy. When the edit icon is clicked, it will take the user to the same form as the add books form, but with the information already inputed and once the user has made the changes they want they can click update. When the delete icon is clicked in the collapsible it will bring up a modal which will confirm the deletion of the book.
 
 Skeleton
 Below are links to the wireframes for this project and are designed to include different versions for a desktop, tablet and mobile phone view.
@@ -47,6 +47,9 @@ The sidenav will appear on smaller screens such as tablets and mobiles and when 
 
 Materialize Collapsible
 The collapsible will display the book title, rating and function icons that the user will see and when clicked will expand and display the information about the book.
+
+Add Function Icon
+This icon when clicked will take the user to the add book page.
 
 Edit Function Icon
 This icon when clicked will take the user to the edit page for the book to make any changes and update.
@@ -186,5 +189,6 @@ Font Awesome
 Material Icons
 
 Acknowledgements
-Mentor Dick Vlaanderen helpful with troubleshooting issues.
+Mentor Dick Vlaanderen was very helpful with troubleshooting issues.
+
 This is for educational use
