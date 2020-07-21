@@ -126,6 +126,15 @@ main {
   color: #fff;
   background-color: #455a64;
 }
+.add-icon {
+    color: #455a64;
+    margin-left: 0.5rem;
+    font-size: 30px;
+}
+
+.add-icon:hover{
+    color: #78909c;
+}
 
 .rate {
   padding-top: 5px;

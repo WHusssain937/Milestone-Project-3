@@ -3,15 +3,12 @@
 
 <!--Edit Book Form -->
 <div class="row">
-  <form
-    class="col s12 m8 offset-m2"
-    action="{{ url_for('update_to_wishlist', purchase_id=purchase._id) }}"
-    method="POST"
-  >
-    <h4 class="form-heading">Edit Wishlist Entry</h4>
-    <div class="col s12 input-field form-row">
-      <label for="purchase_title">Book Title</label>
-      <input
+	<form class="col s12 m8 offset-m2" action="{{ url_for('update_to_wishlist', purchase_id=purchase._id) }}"
+		method="POST">
+		<h4 class="form-heading">Edit Wishlist Entry</h4>
+		<div class="col s12 input-field form-row">
+			<label for="purchase_title">Book Title</label>
+			<input
         id="purchase_title"
         name="purchase_title"
         type="text"
@@ -19,9 +16,9 @@
         required
       />
     </div>
-    <div class="col s12 input-field form-row">
-      <label for="name_of_author">Author</label>
-      <input
+			<div class="col s12 input-field form-row">
+				<label for="name_of_author">Author</label>
+				<input
         id="name_of_author"
         name="name_of_author"
         type="text"
@@ -29,9 +26,9 @@
         required
       />
     </div>
-    <div class="col s12 input-field form-row">
-      <label for="release_year">Year of Release</label>
-      <input
+				<div class="col s12 input-field form-row">
+					<label for="release_year">Year of Release</label>
+					<input
         id="release_year"
         name="release_year"
         type="text"
@@ -39,9 +36,9 @@
         required
       />
     </div>
-    <div class="col s12 input-field form-row">
-      <label for="purchase_genre">Genre</label>
-      <input
+					<div class="col s12 input-field form-row">
+						<label for="purchase_genre">Genre</label>
+						<input
         id="purchase_genre"
         name="purchase_genre"
         type="text"
@@ -49,28 +46,27 @@
         required
       />
     </div>
-    <div class="col s12 input-field form-row">
-      <label for="why_buy">Why Do You Want This Book?</label>
-      <textarea
+						<div class="col s12 input-field form-row">
+							<label for="why_buy">Why Do You Want This Book?</label>
+							<textarea
         id="why_buy"
         name="why_buy"
         class="materialize-textarea"
         maxlength="1000"
-      >
-{{purchase.why_buy}}</textarea
-      >
-    </div>
-    <div class="col s12 input-field form-row">
-      <label for="purchase_link">Link To Buy:</label>
-      <input
+        required>
+{{purchase.why_buy}}</textarea>
+						</div>
+						<div class="col s12 input-field form-row">
+							<label for="purchase_link">Link To Buy:</label>
+							<input
         id="purchase_link"
         name="purchase_link"
         type="url"
         value="{{purchase.purchase_link}}"
       />
     </div>
-    <div class="row btn-align">
-      <button
+							<div class="row btn-align">
+								<button
         class="btn waves-effect waves-light submit-btn"
         type="submit"
         name="action"
@@ -78,8 +74,8 @@
         Update
         <i class="material-icons right">send</i>
       </button>
-    </div>
-  </form>
+							</div>
+	</form>
 </div>
 
 {% endblock %}

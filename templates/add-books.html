@@ -4,7 +4,7 @@
 <!--Add Book Form -->
 <div class="row">
   <form class="col s12 m8 offset-m2" action="{{ url_for('insert_book') }}" method="POST">
-    <h4 class="form-heading">Add Book</h4>
+	<h4 class="form-heading">Add Book</h4>
     <div class="col s12 input-field form-row">
       <label for="book_title">Book Title</label>
       <input id="book_title" name="book_title" type="text" required />
@@ -28,7 +28,7 @@
         name="book_review"
         class="materialize-textarea"
         maxlength="1000"
-      ></textarea>
+        required></textarea>
     </div>
     <div class="col s12 input-field form-row">
       <label for="rating">Rate This Book From 0 to 5</label>

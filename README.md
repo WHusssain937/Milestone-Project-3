@@ -8,15 +8,13 @@ User Stories
 
 Below are user stories that were made so that I have a vision for my project:
 
-As a user, I would like to store the books that I own on a online database.
-
-As a user, I would like to store the books that I want to buy on a online database.
-
 As a new user, I would like the site to be easy to use.
 
-As a user, I would like to be able to add books with ease.
+As a user, I would like to store the books that I own and want to buy on a online database.
 
-As a user, I would like to see the books that I have added.
+As a regular user, I would like to be able to add books with ease.
+
+As a regular user, I would like to view the books that I have added.
 
 As a user, I would like to be able to update any books or delete any books I have added.
 
@@ -27,7 +25,7 @@ Scope
 The site is to provide users who would like a online library to record the books they own and would like to buy by filling in a form with information on the book. The user is also able to delete any books they no longer own or would not like to buy anymore and edit information on the books they have added.
 
 Structure
-The main pages on the site is the my books and books to purchase section which will display the books that the users adds, when a book is added it will be displayed in a collapsible with edit and delete icons and the rating of the book the user gives to it. When the collapsible is clicked it will dropdown with the information on the book such as the author and the review from the user. When the users wants to add a book, he can just click on the add book links in the navbar which will take the user to the forms to add either a book they own or would like to buy. The add book forms will allow the user to fill in information about the book such as the title, author, year of release and genre, when the user adds a book they own they can also add a personal review and rating of the book in the form and if they are adding a book to purchase then instead in the form they can add why they want to buy the book and a link for the book to buy. When the edit icon is clicked, it will take the user to the same form as the add books form, but with the information already inputed and once the user has made the changes they want they can click update. When the delete icon is clicked in the collapsible it will bring up a modal which will confirm the deletion of the book.
+The main pages on the site is the my books and books to purchase section which will display the books that the users adds, when a book is added it will be displayed in a collapsible with edit and delete icons and the rating of the book the user gives to it or in the wishlist collapsible it will be a link to buy icon. When the collapsible is clicked it will dropdown with the information on the book such as the author and the review from the user. When the users wants to add a book, he can just click on the add book links in the navbar which will take the user to the forms to add either a book they own or would like to buy. The add book forms will allow the user to fill in information about the book such as the title, author, year of release and genre, when the user adds a book they own they can also add a personal review and rating of the book in the form and if they are adding a book to purchase then instead in the form they can add why they want to buy the book and a link for the book to buy. When the edit icon is clicked, it will take the user to the same form as the add books form, but with the information already inputed and once the user has made the changes they want they can click update. When the delete icon is clicked in the collapsible it will bring up a modal which will confirm the deletion of the book.
 
 Skeleton
 Below are links to the wireframes for this project and are designed to include different versions for a desktop, tablet and mobile phone view.
@@ -126,3 +124,49 @@ The validator found no issues with the file.
 
 Python Checker https://extendsclass.com/python-tester.html
 This website check the python code and found no syntax errors.
+
+Testing For User Stories Objectives
+
+I would like the site to be easy to use.
+
+I would like to store the books that I own and want to buy on a online database.
+The books are listed in a library and stored in two sections called 'My Books' and 'Wishlist' depending on if the user owns the book or wants to buy, the user can add as many books as they would like.
+
+I would like to view the books that I have added.
+Each book was stored separately in a collapsible in both the 'My Books' and 'Wishlist' sections. The header in the collapsible in the 'My Books' section, will have the book title, rating and the edit and delete icons for the book and when the collapsible is clicked, the information of the book will appear. The collapsible in the 'Wishlist' section will the same to the 'My Books' section except that in the header there will be no ratings and a third function icon link to buy will be present.
+
+Add Book Form
+Click on add book link and it will go to add book form for the 'My Books' section.
+First, I will type in the book title and click the form submit button and as expected the form doesn't submit as the other required fields haven't been filled in.
+Then, I also filled in the author field as well and also as expected the form didnt't submit.
+Then, I filled in the third field box also which is the year the book was released and the form as expected didn't submit.
+Then, I also filled in the fourth field box, the genre of the book and as expected the form didnt't submit.
+Then, I filled in the book review field and submitted the form and as expected the form didnt submit.
+I then filled in the last field, the rating of the book. The rating must be between zero to five so when I put in the number seven the form doesn't submit as expected as the number needs to be five or below.
+When I put three in the ratings field and submit the form, as expected it submits.
+The form then returns to the 'My Books' section with the book listed. 
+
+Add to Wishlist Form
+Click on add to wishlist and it will go to the add to wishlist form for 'Wishlist' section.
+First, I will type in the book title and click the form submit button and as expected the form doesn't submit as the other required fields haven't been filled in.
+Then, I also filled in the author field as well and also as expected the form didnt't submit.
+Then, I filled in the third field box also which is the year the book was released and the form as expected didn't submit.
+Then, I also filled in the fourth field box, the genre of the book and as expected the form didnt't submit.
+Then, I filled in the field for the reason why to buy the book and submitted the form and as expected the form didnt submit.
+I then filled in the last field, the link to purchase the book and submitted the from and as expected the form submitted.
+The form then returns to the 'Wishlist' section with the book listed. 
+
+Edit Book/Wishlist Entry
+When I want to edit a book entry in either the 'My Books' and 'Wishlist' section, I need to click on the edit icon in the collapsible and it will take me to the edit page.
+First, I will click on the edit icon in the 'My Books' section and it will take me to the edit book entry page.
+Then I will change the genre from Novel to Fiction and submit the form and as expected it returns to the 'My Books' section.
+I can view my change and see that it has been a success.
+This will be the same experience for a edit wishlist entry. 
+
+Delete Book/Wishlist Entry
+When I want to delete a book entry in either the 'My Books' and 'Wishlist' section, I need to click on the delete icon in the collapsible and it will open a confirmation modal.
+First, I will click on the delete icon in the 'Wishlist' section and it will open the confirmation modal.
+I will then be present with two options yes or no, I will select no, the modal will close as expected.
+Then, I will again click on the delete icon and this time select yes and the modal will close.
+I can now see that the book entry has been deleted
+This will be the same experience as the deleting a my book entry. 

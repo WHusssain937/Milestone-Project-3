@@ -1,53 +1,84 @@
 <!DOCTYPE html>
 {% extends 'base.html' %} {% block content %}
 
-<h4 class="page-heading">Wishlist</h4>
+<h4 class="page-heading">
+  Wishlist<a
+    href="{{url_for('add_to_wishlist')}}"
+    class="tooltipped"
+    data-position="top"
+    data-tooltip="Add to Wishlist"
+    ><i class="fas fa-plus add-icon"></i
+  ></a>
+</h4>
 {% for purchase in purchases %}
 <div class="container-fluid">
-	<div class="row">
-		<!--Book Entry Collapsible -->
-		<ul class="collapsible">
-			<li>
-				<div class="collapsible-header">
-					<div class="col s6 m8 l9">
-						<!--Book Title & Rating -->
-						<i class="material-icons hide-on-small-only">local_library</i>
-						<strong>{{purchase.purchase_title}}</strong>
-					</div>
-					<div class="col s6 m4 l3">
-						<!--Buy Book Link Icon -->
-						<a href="{{purchase.purchase_link}}" class="tooltipped" data-position="top"
-							data-tooltip="Link To Buy"><i class="material-icons link-icon">launch</i></a>
-						<!--Edit Icon -->
-						<a href="{{url_for('edit_wishlist_entry', purchase_id=purchase._id)}}" class="tooltipped"
-							data-position="top" data-tooltip="Edit"><i class="material-icons edit-icon">create</i></a>
-						<!--Delete Modal Trigger -->
-						<a class="modal-trigger tooltipped" href="#modal-confirm2-{{purchase._id}}" data-position="top"
-							data-tooltip="Delete"><i class="material-icons delete-icon">delete</i></a>
+  <div class="row">
+    <!--Book Entry Collapsible -->
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header">
+          <div class="col s6 m8 l9">
+            <!--Book Title & Rating -->
+            <i class="material-icons hide-on-small-only">local_library</i>
+            <strong>{{purchase.purchase_title}}</strong>
+          </div>
+          <div class="col s6 m4 l3">
+            <!--Buy Book Link Icon -->
+            <a
+              href="{{purchase.purchase_link}}"
+              class="tooltipped"
+              data-position="top"
+              data-tooltip="Link To Buy"
+              ><i class="material-icons link-icon">launch</i></a
+            >
+            <!--Edit Icon -->
+            <a
+              href="{{url_for('edit_wishlist_entry', purchase_id=purchase._id)}}"
+              class="tooltipped"
+              data-position="top"
+              data-tooltip="Edit"
+              ><i class="material-icons edit-icon">create</i></a
+            >
+            <!--Delete Modal Trigger -->
+            <a
+              class="modal-trigger tooltipped"
+              href="#modal-confirm2-{{purchase._id}}"
+              data-position="top"
+              data-tooltip="Delete"
+              ><i class="material-icons delete-icon">delete</i></a
+            >
 
-						<!-- Modal Structure -->
-						<div id="modal-confirm2-{{purchase._id}}" class="modal blue-grey darken-2">
-							<div class="modal-content center-align">
-								<h5>Are You Sure You Want To Delete This Book?</h5>
-								<a href="{{url_for('delete_wishlist_entry', purchase_id=purchase._id)}}"
-									class="modal-action modal-close btn-flat white-text">Yes</a>
-								<a href="#" class="modal-action modal-close btn-flat white-text">No</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--Collapsible Information -->
-				<div class="collapsible-body center-align">
-					<span>
-              Author: {{purchase.name_of_author}}<br />Year Released:
-              {{purchase.release_year}} <br />Genre:
-              {{purchase.purchase_genre}}<br />Why Do You Want This Book?:
-              {{purchase.why_buy}}
-            </span>
-				</div>
-			</li>
-		</ul>
-	</div>
+            <!-- Modal Structure -->
+            <div
+              id="modal-confirm2-{{purchase._id}}"
+              class="modal blue-grey darken-2"
+            >
+              <div class="modal-content center-align">
+                <h5>Are You Sure You Want To Delete This Book?</h5>
+                <a
+                  href="{{url_for('delete_wishlist_entry', purchase_id=purchase._id)}}"
+                  class="modal-action modal-close btn-flat white-text"
+                  >Yes</a
+                >
+                <a href="#" class="modal-action modal-close btn-flat white-text"
+                  >No</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Collapsible Information -->
+        <div class="collapsible-body center-align">
+          <span>
+            Author: {{purchase.name_of_author}}<br />Year Released:
+            {{purchase.release_year}} <br />Genre:
+            {{purchase.purchase_genre}}<br />Why Do You Want This Book?:
+            {{purchase.why_buy}}
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>
 
 {% endfor %} {% endblock %}
