@@ -128,6 +128,7 @@ This website check the python code and found no syntax errors.
 Testing For User Stories Objectives
 
 I would like the site to be easy to use.
+The site is quite simple and straight forward. There are two links in the navbar for the two main sections. The add, edit and delete icons are easy to understand and use. An issue I had during testing was the feedback I had from my mentor and friends who tested the website, they found that the navbar was confusing with explanation and couldn't understand between 'My Books' and 'Books to Purchase'. To rectify this, I have replaced the name 'Books to Purchase' with 'Wishlist' and have made the necessary changes with the add form and edit form for this section as well. I have removed the add links in the navbar and placed add icons next to the page headings for the sections which will link to the add forms. This has simplifed the site and made it easy to use.  
 
 I would like to store the books that I own and want to buy on a online database.
 The books are listed in a library and stored in two sections called 'My Books' and 'Wishlist' depending on if the user owns the book or wants to buy, the user can add as many books as they would like.
@@ -173,4 +174,17 @@ This will be the same experience as the deleting a my book entry.
 
 Websites & Devices Testing
 
-This site was tested on different devices such as a large desktop screen, laptop, Samsung S10+, Iphone 6/7/8, Ipad Pro and Ipad and on multiple web browsers such as Google Chrome, Internet Exployer and Firefox to make sure that it was responsive and compatible. I also had my friends and family tests it on their phones and laptops and it was responsive 
+This site was tested on different devices such as a large desktop screen, laptop, Samsung S10+, Iphone 6/7/8, Ipad Pro and Ipad and on multiple web browsers such as Google Chrome and Firefox to make sure that it was responsive and compatible. I also had my friends and family tests it on their phones and laptops and it was responsive. One issue I had during testing was that on a mobile screen the collapsible header was not responsive due to too much text, I resolved this by getting a materialize helper to hide the rating of the book in the header on small screen, the user can still find the rating when he clicks on the collapsible in the body.
+
+Deployment
+
+Credits
+
+Content
+Materialize
+Font Awesome
+Material Icons
+
+Acknowledgements
+Mentor Dick Vlaanderen helpful with troubleshooting issues.
+This is for educational use
