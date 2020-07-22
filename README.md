@@ -112,10 +112,16 @@ Google Fonts
 This project was used to inlude the font 'Sriracha' in my project.
 
 Flask Framework
-This framework was used to build the site.
+This framework was used to build the app.
+
+Jinja
+Templates with Flask were created using Jinja.
 
 MongoDB
-This database was used to store the information inputting in the site.
+This database was used to store the information inputting in the app.
+
+Heroku
+The app is hosted on Heroku.
 
 Testing
 
@@ -207,9 +213,52 @@ This site was tested on different devices such as a large desktop screen, laptop
 
 Deployment
 
+This app is hosted by GitHub Pages, it is directly deployed via the master branch and it was used for version control and commits and then pushed to a repository in Github.
+
+Run Locally
+To run locally, You can clone this respository directly in the terminal of the environment you are using for code editing type: git clone Booksmart https://github.com/WHusssain937/Milestone-Project-3. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
+
+Creating a Environment Variable
+You will need to create a environment variable to protect your MongoDB username and password. These are the following steps to create a environment variable:
+First, you will need to create a env.py file so type the following command in the terminal: touch env.py.
+Then, you will need to create a .gitignore file if you dont already have one, the command to type in the terminal: echo env.py > .gitignore.
+In the env.py file you will need to set a environment variable as follows:
+import os
+os.environ['MONGO_DBNAME'] = 'Your MongoDB Name'
+os.environ['MONGO_URI'] = 'Your Mongo String Here'
+You will then need to go to your app.py file and call your environment variable as follows:
+import os
+from os import path
+
+if path.exists('env.py'):
+import env
+app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
+app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
+
+Deploying to Heroku 
+The app is currently being deployed on Heroku using the master branch on Github. These are the steps that were taken to deploy to Heroku:
+
+A requirements.txt file was created so that Heroku could install the necessary dependencies to run the app. The command used to create the file: pip3 freeze --local > requirements.txt.
+A Procfile also was created so that Heroku could tell what kind of application it is deploying and how to run. The command used to create the file: echo web: python run.py > Procfile.
+You will then need to create a free Heroku account.
+Create a new app for the project, selecting a name for the app and also choosing the closest region.
+Then you will need to go into the Deploy tab in the app and choose a deployment method. I chose Heroku Git, using Heroku CLI and logged in via the gitpod terminal using the following command: heroku login.
+Once logged in the terminal, commit the changes using the following commands: git add and git commit -m "commit message here".
+Then you will need to push the changes to heroku using the following command: git push heroku master.
+
+Return back to app dashboard in Heroku and go to settings and scroll down until you find Reveal Config Vars and put in the following values:
+###### Key --- Values
+IP --- 0.0.0.0
+PORT --- 5000
+MONGO_URI --- <link to your Mongo DB>
+
+Click on Open App in Heroku and if all steps have been followed the app will open.
+
 Credits
 
 Content
+The content on the app was written by myself.
+
 Materialize
 Font Awesome
 Material Icons
