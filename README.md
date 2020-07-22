@@ -93,34 +93,34 @@ This was used to build the app and input content.
 ##### CSS
 This was the second language used to style the app.
 
-##### Python
+##### [Python](https://www.python.org/)
 This was the third language used to run the backend of the app and its functions
 
-##### Jquery
+##### [Jquery](https://jquery.com/)
 This library was used to to allow the Materialize modal, collapsible, sidenav and tooltips to work.
 
-##### Materialize
+##### [Materialize](http://archives.materializecss.com/0.100.2/)
 This framework was used to create a structure to the app and it was used to create the navbar, sidenav, collapsible and more.
 
-##### Material icons
+##### [Material icons](https://material.io/resources/icons/?style=baseline)
 This icon library was used to place icons in my project such as the icons in the collapsible.
 
-##### Font Awesome
+##### [Font Awesome](https://fontawesome.com/)
 This icon library was also used to place icons in my project such as the icons in the navbar and footer.
 
-##### Google Fonts
+##### [Google Fonts](https://fonts.google.com/)
 This project was used to inlude the font 'Sriracha' in my project.
 
-##### Flask Framework
+##### [Flask Framework](https://flask.palletsprojects.com/en/1.1.x/)
 This framework was used to build the app.
 
-##### Jinja
+##### [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 Templates with Flask were created using Jinja.
 
-##### MongoDB
+##### [MongoDB](https://www.mongodb.com/)
 This database was used to store the information inputting in the app.
 
-##### Heroku
+##### [Heroku](https://www.heroku.com/)
 The app is hosted on Heroku.
 
 ## Information Architecture
@@ -153,13 +153,13 @@ There are two collections which I have used for this project, the first one is c
 
 ## Testing
 
-##### HTML Validator
+##### [HTML Validator](https://validator.w3.org/)
 The first error that the validator picked up was that the type attribute for the script tag was unnecessary. Another error that was picked up was that in the edit book form, the rating's label for attribute wasn't the same as the input id for rating. These were the only two errors picked up during HTML validation.
 
-##### CSS Validator 
+##### [CSS Validator](https://jigsaw.w3.org/css-validator/) 
 The validator found no issues with the file.
 
-##### Python Checker https://extendsclass.com/python-tester.html
+##### [Python Checker](https://extendsclass.com/python-tester.html)
 This website check the python code and found no syntax errors. 
 
 ### Testing For User Stories Objectives
@@ -225,45 +225,45 @@ These are the following steps to create a environment variable:
 1. First, you will need to create a env.py file so type the following command in the terminal: touch env.py.
 2. Then, you will need to create a .gitignore file if you dont already have one, the command to type in the terminal: echo env.py > .gitignore.
 3. In the env.py file you will need to set a environment variable as follows:
-* import os
-* os.environ['MONGO_DBNAME'] = 'Your MongoDB Name'
-* os.environ['MONGO_URI'] = 'Your Mongo String Here'
+  1. import os.
+  2. os.environ['MONGO_DBNAME'] = 'Your MongoDB Name'.
+  3. os.environ['MONGO_URI'] = 'Your Mongo String Here'.
 4. You will then need to go to your app.py file and call your environment variable as follows:
-* Type, import os
-* from os import path
-* if path.exists('env.py'):
-* import env
-* app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
-* app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
+  1. Type, import os
+  2. from os import path
+  3. if path.exists('env.py'):
+  4. import env
+  5. app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
+  6. app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
 
 ##### Deploying to Heroku 
 The app is currently being deployed on Heroku using the master branch on Github.
 
 These are the steps that were taken to deploy to Heroku:
-1. A requirements.txt file was created so that Heroku could install the necessary dependencies to run the app. The command used to create the file: pip3 freeze --local > requirements.txt.
-2. A Procfile also was created so that Heroku could tell what kind of application it is deploying and how to run. The command used to create the file: echo web: python run.py > Procfile.
-3. You will then need to create a free Heroku account.
+1. A requirements.txt file was created so that Heroku could install the necessary dependencies to run the app. The command used to create the file: **pip3 freeze --local > requirements.txt**.
+2. A Procfile also was created so that Heroku could tell what kind of application it is deploying and how to run. The command used to create the file: **echo web: python run.py > Procfile**.
+3. You will then need to create a free [Heroku](https://www.heroku.com/) account.
 4. Create a new app for the project, selecting a name for the app and also choosing the closest region.
-5. Then you will need to go into the Deploy tab in the app and choose a deployment method. I chose Heroku Git, using Heroku CLI and logged in via the gitpod terminal using the following command: heroku login.
-6. Once logged in the terminal, commit the changes using the following commands: git add and git commit -m "commit message here".
-7. Then you will need to push the changes to heroku using the following command: git push heroku master.
+5. Then you will need to go into the Deploy tab in the app and choose a deployment method. I chose Heroku Git, using Heroku CLI and logged in via the gitpod terminal using the following command: **heroku login**.
+6. Once logged in the terminal, commit the changes using the following commands: **git add and git commit -m "commit message here"**.
+7. Then you will need to push the changes to heroku using the following command: **git push heroku master**.
 
 8. Return back to app dashboard in Heroku and go to settings and scroll down until you find Reveal Config Vars and put in the following values:
 | Key       | Values                      |
-| --------- | ---------------------------:|
+| --------- |:---------------------------:|
 | IP        | 0.0.0.0                     |
 | PORT      | 5000                        | 
-| MONGO_URI | --- <link to your Mongo DB> |
+| MONGO_URI | <link to your Mongo DB> |
 
 9. Click on Open App in Heroku and if all steps have been followed the app will open.
 
 ## Credits
 
 ### Content
-* The content on the app was written by myself.
-* Materialize
-* Font Awesome
-* Material Icons
+ * The content on the app was written by myself.
+ * Materialize
+ * Font Awesome
+ * Material Icons
 
 ### Acknowledgements
 Mentor Dick Vlaanderen was very helpful with troubleshooting issues.
