@@ -128,6 +128,32 @@ The validator found no issues with the file.
 Python Checker https://extendsclass.com/python-tester.html
 This website check the python code and found no syntax errors.
 
+Information Architecture
+
+Database 
+I have chosen MongoDB Atlas as the database as it is required for this project. The data that will be stored in MongoDB will be stored in strings, in future projects I would like to experiment with other data like booleans and datetime.
+
+Collections Data Structure
+There are two collections which I have used for this project, the first one is called books where the information from the my books section will be stored and the second one is called purchases where the information from the wishlist section will be stored.
+
+##### Books Collection
+###### Title --- Key in MongoDB --- Form Validation Type --- Data Type
+Book Title --- book_title --- text --- string
+Author --- author --- text --- string
+Year Released --- year_of_release --- number --- string
+Genre --- genre --- text --- string
+Book Review --- book_review --- text --- string
+Rating --- rating --- number --- string 
+
+##### Purchases Collection
+###### Title --- Key in MongoDB --- Form Validation Type --- Data Type
+Book Title --- purchase_title --- text --- string
+Author --- name_of_author --- text --- string
+Year Released --- release_year --- number --- string
+Genre --- purchase_genre --- text --- string
+Why Do You Want This Book? --- why_buy --- text --- string
+Link To Buy --- purchase_link --- text --- string 
+
 Testing For User Stories Objectives
 
 I would like the site to be easy to use.
