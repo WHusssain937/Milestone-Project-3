@@ -225,16 +225,16 @@ These are the following steps to create a environment variable:
 1. First, you will need to create a env.py file so type the following command in the terminal: touch env.py.
 2. Then, you will need to create a .gitignore file if you dont already have one, the command to type in the terminal: echo env.py > .gitignore.
 3. In the env.py file you will need to set a environment variable as follows:
-⋅⋅1. import os
-⋅⋅2. os.environ['MONGO_DBNAME'] = 'Your MongoDB Name'
-⋅⋅3. os.environ['MONGO_URI'] = 'Your Mongo String Here'
+* import os
+* os.environ['MONGO_DBNAME'] = 'Your MongoDB Name'
+* os.environ['MONGO_URI'] = 'Your Mongo String Here'
 4. You will then need to go to your app.py file and call your environment variable as follows:
-⋅⋅1. Type, import os
-⋅⋅2. from os import path
-⋅⋅3. if path.exists('env.py'):
-⋅⋅4. import env
-⋅⋅5. app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
-⋅⋅6. app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
+* Type, import os
+* from os import path
+* if path.exists('env.py'):
+* import env
+* app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
+* app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
 
 ##### Deploying to Heroku 
 The app is currently being deployed on Heroku using the master branch on Github.
@@ -250,7 +250,7 @@ These are the steps that were taken to deploy to Heroku:
 
 8. Return back to app dashboard in Heroku and go to settings and scroll down until you find Reveal Config Vars and put in the following values:
 | Key       | Values                      |
-| --------- |----------------------------:|
+| --------- | ---------------------------:|
 | IP        | 0.0.0.0                     |
 | PORT      | 5000                        | 
 | MONGO_URI | --- <link to your Mongo DB> |
