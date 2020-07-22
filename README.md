@@ -30,7 +30,10 @@ The main pages on the app is the 'My Books' and 'Wishlist' section which will di
 #### Skeleton
 Below are links to the wireframes for this project and are designed to include different versions for a desktop, tablet and mobile phone view.
 
-add wireframes link here when inputed
+**Wireframes**
+[Desktop](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/desktop)
+[Tablet](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/tablet)
+[Mobile](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/mobile)
 
 #### Surface
 The primary background color of app is dark blue which is in the header, footer and collapsible, but the navbar and sidenav background colour is light grey as I believe this offered the app a great balance. The color of all the text except for the forms is white and the font is Sriracha as it worked well with the page and the font is stylish but easily readable. There is a double border around the forms, which helps make it look like the book is a form.
