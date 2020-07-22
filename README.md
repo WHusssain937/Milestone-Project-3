@@ -1,5 +1,7 @@
 # BookSmart
 
+### [Live App](https://ms3-booksmart.herokuapp.com/)
+
 ### My third milestone project is based on creating a app that will allow the user to record the books that they own and would like to buy.
 
 ## UX 
@@ -25,15 +27,15 @@ My plan for the app was to create an online system where the user can record the
 The site is to provide users who would like a online library to record the books they own and would like to buy by filling in a form with information on the book. The user is also able to delete any books they no longer own or would not like to buy anymore and edit information on the books they have added.
 
 #### Structure
-The main pages on the app is the 'My Books' and 'Wishlist' section which will display the books that the users adds, when a book is added it will be displayed in a collapsible with edit and delete icons and the rating of the book the user gives to it or in the wishlist section, the collapsible will have an link to buy icon instead. When the collapsible is clicked it will dropdown with the information on the book such as the author and the review from the user. When the users wants to add a book, he can just click on the add book links in the navbar which will take the user to the forms to add either a book they own or would like to buy. The add book forms will allow the user to fill in information about the book such as the title, author, year of release and genre, when the user adds a book they own they can also add a personal review and rating of the book in the form and if they are adding a book to the 'Wishlist' section then instead in the form they can add why they want to buy the book and a link for the book to buy. When the edit icon is clicked, it will take the user to the same form as the add books form, but with the information already inputed and once the user has made the changes they want they can click update. When the delete icon is clicked in the collapsible it will bring up a modal which will confirm the deletion of the book.
+The main pages on the app is the 'My Books' and 'Wishlist' section which will display the books that the users adds, when a book is added it will be displayed in a collapsible with edit and delete icons and the rating of the book the user gives to it or in the wishlist section, the collapsible will have an link to buy icon instead. When the collapsible is clicked it will dropdown with the information on the book such as the author and the review from the user. When the users wants to add a book, he can just click on the add icon next to the secton heading in the library which will take the user to the forms to add either a book they own or would like to buy. The add book forms will allow the user to fill in information about the book such as the title, author, year of release and genre, when the user adds a book they own they can also add a personal review and rating of the book in the form and if they are adding a book to the 'Wishlist' section then instead in the form they can add why they want to buy the book and a link for the book to buy. When the edit icon is clicked, it will take the user to the same form as the add books form, but with the information already inputed and once the user has made the changes they want they can click update. When the delete icon is clicked in the collapsible it will bring up a modal which will confirm the deletion of the book.
 
 #### Skeleton
 Below are links to the wireframes for this project and are designed to include different versions for a desktop, tablet and mobile phone view.
 
-**Wireframes**
-[Desktop](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/desktop)
-[Tablet](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/tablet)
-[Mobile](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/mobile)
+##### Wireframes
+##### [Desktop](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/desktop)
+##### [Tablet](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/tablet)
+##### [Mobile](https://github.com/WHusssain937/Milestone-Project-3/tree/master/wireframes/mobile)
 
 #### Surface
 The primary background color of app is dark blue which is in the header, footer and collapsible, but the navbar and sidenav background colour is light grey as I believe this offered the app a great balance. The color of all the text except for the forms is white and the font is Sriracha as it worked well with the page and the font is stylish but easily readable. There is a double border around the forms, which helps make it look like the book is a form.
@@ -52,7 +54,7 @@ The sidenav will appear on smaller screens such as tablets and mobiles and when 
 The collapsible will display the book title, rating and function icons that the user will see and when clicked will expand and display the information about the book.
 
 ##### Add Function Icon
-This icon when clicked will take the user to the add book page.
+This icon when clicked will take the user to the add book pages depending on which section of the library they are on.
 
 ##### Edit Function Icon
 This icon when clicked will take the user to the edit page for the book to make any changes and update.
@@ -212,16 +214,16 @@ Each book was stored separately in a collapsible in both the 'My Books' and 'Wis
 * I can now see that the book entry has been deleted
 * This will be the same experience as the deleting a my book entry. 
 
-##### Websites & Devices Testing
+#### Websites & Devices Testing
 This site was tested on different devices such as a large desktop screen, laptop, Samsung S10+, Iphone 6/7/8, Ipad Pro and Ipad and on multiple web browsers such as Google Chrome and Firefox to make sure that it was responsive and compatible. I also had my friends and family tests it on their phones and laptops and it was responsive. One issue I had during testing was that on a mobile screen the collapsible header was not responsive due to too much text, I resolved this by getting a materialize helper to hide the rating of the book in the header on small screen, the user can still find the rating when he clicks on the collapsible in the body.
 
 ## Deployment
 This app is hosted by GitHub Pages, it is directly deployed via the master branch and it was used for version control and commits and then pushed to a repository in Github.
 
-##### Run Locally
+#### Run Locally
 To run locally, You can clone this respository directly in the terminal of the environment you are using for code editing type: git clone Booksmart https://github.com/WHusssain937/Milestone-Project-3. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
-##### Creating a Environment Variable
+#### Creating a Environment Variable
 You will need to create a environment variable to protect your MongoDB username and password. 
 
 **These are the following steps to create a environment variable:**
@@ -239,7 +241,7 @@ You will need to create a environment variable to protect your MongoDB username 
   * app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
   * app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
 
-##### Deploying to Heroku 
+#### Deploying to Heroku 
 The app is currently being deployed on Heroku using the master branch on Github.
 
 **These are the steps that were taken to deploy to Heroku:**
