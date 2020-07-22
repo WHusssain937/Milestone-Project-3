@@ -174,40 +174,40 @@ The books are listed in a library and stored in two sections called 'My Books' a
 Each book was stored separately in a collapsible in both the 'My Books' and 'Wishlist' sections. The header in the collapsible in the 'My Books' section, will have the book title, rating and the edit and delete icons for the book and when the collapsible is clicked, the information of the book will appear. The collapsible in the 'Wishlist' section will the same to the 'My Books' section except that in the header there will be no ratings and a third function icon link to buy will be present.
 
 ##### Add Book Form
-..* Click on add book link and it will go to add book form for the 'My Books' section.
-..* First, I will type in the book title and click the form submit button and as expected the form doesn't submit as the other required fields haven't been filled in.
-..* Then, I also filled in the author field as well and also as expected the form didnt't submit.
-..* Then, I filled in the third field box also which is the year the book was released and the form as expected didn't submit.
-..* Then, I also filled in the fourth field box, the genre of the book and as expected the form didnt't submit.
-..* Then, I filled in the book review field and submitted the form and as expected the form didnt submit.
-..* I then filled in the last field, the rating of the book. The rating must be between zero to five so when I put in the number seven the form doesn't submit as expected as the number needs to be five or below.
-..* When I put three in the ratings field and submit the form, as expected it submits.
-..* The form then returns to the 'My Books' section with the book listed. 
+* Click on add book link and it will go to add book form for the 'My Books' section.
+* First, I will type in the book title and click the form submit button and as expected the form doesn't submit as the other required fields haven't been filled in.
+* Then, I also filled in the author field as well and also as expected the form didnt't submit.
+* Then, I filled in the third field box also which is the year the book was released and the form as expected didn't submit.
+* Then, I also filled in the fourth field box, the genre of the book and as expected the form didnt't submit.
+* Then, I filled in the book review field and submitted the form and as expected the form didnt submit.
+* I then filled in the last field, the rating of the book. The rating must be between zero to five so when I put in the number seven the form doesn't submit as expected as the number needs to be five or below.
+* When I put three in the ratings field and submit the form, as expected it submits.
+* The form then returns to the 'My Books' section with the book listed. 
 
 ##### Add to Wishlist Form
-..* Click on add to wishlist and it will go to the add to wishlist form for 'Wishlist' section.
-..* First, I will type in the book title and click the form submit button and as expected the form doesn't submit as the other required fields haven't been filled in.
-..* Then, I also filled in the author field as well and also as expected the form didnt't submit.
-..* Then, I filled in the third field box also which is the year the book was released and the form as expected didn't submit.
-..* Then, I also filled in the fourth field box, the genre of the book and as expected the form didnt't submit.
-..* Then, I filled in the field for the reason why to buy the book and submitted the form and as expected the form didnt submit.
-..* I then filled in the last field, the link to purchase the book and submitted the from and as expected the form submitted.
-..* The form then returns to the 'Wishlist' section with the book listed. 
+* Click on add to wishlist and it will go to the add to wishlist form for 'Wishlist' section.
+* First, I will type in the book title and click the form submit button and as expected the form doesn't submit as the other required fields haven't been filled in.
+* Then, I also filled in the author field as well and also as expected the form didnt't submit.
+* Then, I filled in the third field box also which is the year the book was released and the form as expected didn't submit.
+* Then, I also filled in the fourth field box, the genre of the book and as expected the form didnt't submit.
+* Then, I filled in the field for the reason why to buy the book and submitted the form and as expected the form didnt submit.
+* I then filled in the last field, the link to purchase the book and submitted the from and as expected the form submitted.
+* The form then returns to the 'Wishlist' section with the book listed. 
 
 ##### Edit Book/Wishlist Entry
-..* When I want to edit a book entry in either the 'My Books' and 'Wishlist' section, I need to click on the edit icon in the collapsible and it will take me to the edit page.
-..* First, I will click on the edit icon in the 'My Books' section and it will take me to the edit book entry page.
-..* Then I will change the genre from Novel to Fiction and submit the form and as expected it returns to the 'My Books' section.
-..* I can view my change and see that it has been a success.
-..* This will be the same experience for a edit wishlist entry. 
+* When I want to edit a book entry in either the 'My Books' and 'Wishlist' section, I need to click on the edit icon in the collapsible and it will take me to the edit page.
+* First, I will click on the edit icon in the 'My Books' section and it will take me to the edit book entry page.
+* Then I will change the genre from Novel to Fiction and submit the form and as expected it returns to the 'My Books' section.
+* I can view my change and see that it has been a success.
+* This will be the same experience for a edit wishlist entry. 
 
 ##### Delete Book/Wishlist Entry
-..* When I want to delete a book entry in either the 'My Books' and 'Wishlist' section, I need to click on the delete icon in the collapsible and it will open a confirmation modal.
-..* First, I will click on the delete icon in the 'Wishlist' section and it will open the confirmation modal.
-..* I will then be present with two options yes or no, I will select no, the modal will close as expected.
-..* Then, I will again click on the delete icon and this time select yes and the modal will close.
-..* I can now see that the book entry has been deleted
-..* This will be the same experience as the deleting a my book entry. 
+* When I want to delete a book entry in either the 'My Books' and 'Wishlist' section, I need to click on the delete icon in the collapsible and it will open a confirmation modal.
+* First, I will click on the delete icon in the 'Wishlist' section and it will open the confirmation modal.
+* I will then be present with two options yes or no, I will select no, the modal will close as expected.
+* Then, I will again click on the delete icon and this time select yes and the modal will close.
+* I can now see that the book entry has been deleted
+* This will be the same experience as the deleting a my book entry. 
 
 ##### Websites & Devices Testing
 This site was tested on different devices such as a large desktop screen, laptop, Samsung S10+, Iphone 6/7/8, Ipad Pro and Ipad and on multiple web browsers such as Google Chrome and Firefox to make sure that it was responsive and compatible. I also had my friends and family tests it on their phones and laptops and it was responsive. One issue I had during testing was that on a mobile screen the collapsible header was not responsive due to too much text, I resolved this by getting a materialize helper to hide the rating of the book in the header on small screen, the user can still find the rating when he clicks on the collapsible in the body.
@@ -225,16 +225,16 @@ These are the following steps to create a environment variable:
 1. First, you will need to create a env.py file so type the following command in the terminal: touch env.py.
 2. Then, you will need to create a .gitignore file if you dont already have one, the command to type in the terminal: echo env.py > .gitignore.
 3. In the env.py file you will need to set a environment variable as follows:
-..* import os
-..* os.environ['MONGO_DBNAME'] = 'Your MongoDB Name'
-..* os.environ['MONGO_URI'] = 'Your Mongo String Here'
+⋅⋅1. import os
+⋅⋅2. os.environ['MONGO_DBNAME'] = 'Your MongoDB Name'
+⋅⋅3. os.environ['MONGO_URI'] = 'Your Mongo String Here'
 4. You will then need to go to your app.py file and call your environment variable as follows:
-..* Type, import os
-..* from os import path
-..* if path.exists('env.py'):
-..* import env
-..* app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
-..* app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
+⋅⋅1. Type, import os
+⋅⋅2. from os import path
+⋅⋅3. if path.exists('env.py'):
+⋅⋅4. import env
+⋅⋅5. app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
+⋅⋅6. app.config['MONGO_DBNAME'] = os.environ.get('MONGODB_NAME')
 
 ##### Deploying to Heroku 
 The app is currently being deployed on Heroku using the master branch on Github.
@@ -249,21 +249,21 @@ These are the steps that were taken to deploy to Heroku:
 7. Then you will need to push the changes to heroku using the following command: git push heroku master.
 
 8. Return back to app dashboard in Heroku and go to settings and scroll down until you find Reveal Config Vars and put in the following values:
-###### Key --- Values
-IP --- 0.0.0.0
-PORT --- 5000
-MONGO_URI --- <link to your Mongo DB>
+| Key       | Values                      |
+| --------- |----------------------------:|
+| IP        | 0.0.0.0                     |
+| PORT      | 5000                        | 
+| MONGO_URI | --- <link to your Mongo DB> |
 
 9. Click on Open App in Heroku and if all steps have been followed the app will open.
 
 ## Credits
 
 ### Content
-The content on the app was written by myself.
-
-..* Materialize
-..* Font Awesome
-..* Material Icons
+* The content on the app was written by myself.
+* Materialize
+* Font Awesome
+* Material Icons
 
 ### Acknowledgements
 Mentor Dick Vlaanderen was very helpful with troubleshooting issues.
