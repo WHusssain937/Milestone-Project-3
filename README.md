@@ -239,7 +239,7 @@ You will need to create a environment variable to protect your MongoDB username 
 ##### Deploying to Heroku 
 The app is currently being deployed on Heroku using the master branch on Github.
 
-These are the steps that were taken to deploy to Heroku:
+**These are the steps that were taken to deploy to Heroku:**
 1. A requirements.txt file was created so that Heroku could install the necessary dependencies to run the app. The command used to create the file: **pip3 freeze --local > requirements.txt**.
 2. A Procfile also was created so that Heroku could tell what kind of application it is deploying and how to run. The command used to create the file: **echo web: python run.py > Procfile**.
 3. You will then need to create a free [Heroku](https://www.heroku.com/) account.
@@ -254,7 +254,7 @@ These are the steps that were taken to deploy to Heroku:
 | --------- |:---------------------------:|
 | IP        | 0.0.0.0                     |
 | PORT      | 5000                        | 
-| MONGO_URI | <link to your Mongo DB>     |
+| MONGO_URI | link to your Mongo DB       |
 
 9. Click on Open App in Heroku and if all steps have been followed the app will open.
 
