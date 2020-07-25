@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 {% extends 'base.html' %} {% block content %}
 
-<!--Add Book Form -->
+<!-- Add Book Form -->
 <div class="row">
   <form class="col s12 m8 offset-m2" action="{{ url_for('insert_book') }}" method="POST">
+  <!-- Add Book Heading -->
 	<h4 class="form-heading">Add Book</h4>
     <div class="col s12 input-field form-row">
+    <!-- Book Title Field -->
       <label for="book_title">Book Title</label>
       <input id="book_title" name="book_title" type="text" required />
     </div>
+    <!-- Author Field -->
     <div class="col s12 input-field form-row">
       <label for="author">Author</label>
       <input id="author" name="author" type="text" required />
     </div>
+    <!-- Year of Release Field -->
     <div class="col s12 input-field form-row">
       <label for="year_of_release">Year of Release</label>
       <input id="year_of_release" name="year_of_release" type="text" required />
     </div>
+    <!-- Genre Field -->
     <div class="col s12 input-field form-row">
       <label for="genre">Genre</label>
       <input id="genre" name="genre" type="text" required />
     </div>
+    <!-- Book Review Field -->
     <div class="col s12 input-field form-row">
       <label for="book_review">Your Book Review</label>
       <textarea
@@ -30,11 +36,12 @@
         maxlength="1000"
         required></textarea>
     </div>
+    <!-- Rating Field -->
     <div class="col s12 input-field form-row">
       <label for="rating">Rate This Book From 0 to 5</label>
       <input id="rating" name="rating" type="number" min="0" max="5" required />
     </div>
-
+    <!-- Submit Form Button -->
     <div class="row btn-align">
       <button
         class="btn waves-effect waves-light submit-btn"

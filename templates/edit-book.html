@@ -8,7 +8,9 @@
     action="{{ url_for('update_book', book_id=book._id) }}"
     method="POST"
   >
+  <!--Edit Book Heading -->
     <h4 class="form-heading">Edit Book Entry</h4>
+    <!-- Book Title Field -->
     <div class="col s12 input-field form-row">
       <label for="book_title">Book Title</label>
       <input
@@ -19,6 +21,7 @@
         value="{{book.book_title}}"
         required
       />
+      <!-- Author Field -->
     </div>
     <div class="col s12 input-field form-row">
       <label for="author">Author</label>
@@ -31,6 +34,7 @@
         required
       />
     </div>
+    <!-- Year of Release Field -->
     <div class="col s12 input-field form-row">
       <label for="year_of_release">Year of Release</label>
       <input
@@ -42,6 +46,7 @@
         required
       />
     </div>
+    <!-- Genre Field -->
     <div class="col s12 input-field form-row">
       <label for="genre">Genre</label>
       <input
@@ -53,6 +58,7 @@
         required
       />
     </div>
+    <!-- Book Review Field -->
     <div class="col s12 input-field form-row">
       <label for="book_review">Your Book Review</label>
       <textarea
@@ -62,7 +68,7 @@
         maxlength="1000"
         required>{{book.book_review}}</textarea>
     </div>
-
+    <!-- Rating Field -->
     <div class="col s12 input-field form-row">
       <label for="book.rating">Rate This Book From 0 to 5</label>
       <input
@@ -75,6 +81,7 @@
         required
       />
     </div>
+    <!-- Update Form Button -->
     <div class="row btn-align">
       <button
         class="btn waves-effect waves-light submit-btn"

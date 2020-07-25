@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 {% extends 'base.html' %} {% block content %}
 
-<!--Add Book Form -->
+<!-- Add To Wishlist Form -->
 <div class="row">
   <form class="col s12 m8 offset-m2" action="{{ url_for('insert_to_wishlist') }}" method="POST">
+  <!-- Add To Wishlist Heading -->
     <h4 class="form-heading">Add To Wishlist</h4>
+    <!-- Book Title Field -->
     <div class="col s12 input-field form-row">
       <label for="purchase_title">Book Title</label>
       <input id="purchase_title" name="purchase_title" type="text" class="validate" required />
     </div>
+    <!-- Author Field -->
     <div class="col s12 input-field form-row">
       <label for="name_of_author">Author</label>
       <input id="name_of_author" name="name_of_author" class="validate" type="text" required />
     </div>
+    <!-- Year of Release Field -->
     <div class="col s12 input-field form-row">
       <label for="release_year">Year of Release</label>
       <input id="release_year" name="release_year" class="validate" type="text" required />
     </div>
+    <!-- Genre Field -->
     <div class="col s12 input-field form-row">
       <label for="purchase_genre">Genre</label>
       <input id="purchase_genre" name="purchase_genre" class="validate" type="text" required />
     </div>
+    <!-- Why Buy Field -->
     <div class="col s12 input-field form-row">
       <label for="why_buy">Why Do You Want This Book?</label>
       <textarea
@@ -31,10 +37,12 @@
         required
       ></textarea>
     </div>
+    <!-- Link To Buy Field -->
     <div class="col s12 input-field form-row">
       <label for="purchase_link">Link To Buy:</label>
       <input id="purchase_link" name="purchase_link" type="url" required />
     </div>
+    <!-- Submit Form Button -->
     <div class="row btn-align">
       <button
         class="btn waves-effect waves-light submit-btn"

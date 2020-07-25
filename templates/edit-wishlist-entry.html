@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 {% extends 'base.html' %} {% block content %}
 
-<!--Edit Book Form -->
+<!--Edit to Wishlist Form -->
 <div class="row">
 	<form class="col s12 m8 offset-m2" action="{{ url_for('update_to_wishlist', purchase_id=purchase._id) }}"
 		method="POST">
+		<!--Edit to Wishlist Heading -->
 		<h4 class="form-heading">Edit Wishlist Entry</h4>
+		<!-- Book Title Field -->
 		<div class="col s12 input-field form-row">
 			<label for="purchase_title">Book Title</label>
 			<input
@@ -16,6 +18,7 @@
         required
       />
     </div>
+			<!-- Author Field -->
 			<div class="col s12 input-field form-row">
 				<label for="name_of_author">Author</label>
 				<input
@@ -26,6 +29,7 @@
         required
       />
     </div>
+				<!-- Year of Release Field -->
 				<div class="col s12 input-field form-row">
 					<label for="release_year">Year of Release</label>
 					<input
@@ -36,6 +40,7 @@
         required
       />
     </div>
+					<!-- Genre Field -->
 					<div class="col s12 input-field form-row">
 						<label for="purchase_genre">Genre</label>
 						<input
@@ -46,16 +51,18 @@
         required
       />
     </div>
+						<!-- Why Buy Field -->
 						<div class="col s12 input-field form-row">
 							<label for="why_buy">Why Do You Want This Book?</label>
 							<textarea
-        id="why_buy"
-        name="why_buy"
-        class="materialize-textarea"
-        maxlength="1000"
-        required>
-{{purchase.why_buy}}</textarea>
+						        id="why_buy"
+						        name="why_buy"
+						        class="materialize-textarea"
+						        maxlength="1000"
+						        required>
+						{{purchase.why_buy}}</textarea>
 						</div>
+						<!-- Link To Buy Field -->
 						<div class="col s12 input-field form-row">
 							<label for="purchase_link">Link To Buy:</label>
 							<input
@@ -65,6 +72,7 @@
         value="{{purchase.purchase_link}}"
       />
     </div>
+							<!-- Update Form Button -->
 							<div class="row btn-align">
 								<button
         class="btn waves-effect waves-light submit-btn"

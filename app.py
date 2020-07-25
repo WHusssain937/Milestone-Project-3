@@ -6,6 +6,7 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
+# ---- CONFIG ----- #
 if path.exists('env.py'):
     import env
 
@@ -15,7 +16,7 @@ app.config['MONGODB_NAME'] = os.environ.get('MONGODB_NAME')
 mongo = PyMongo(app)
 
 
-# MyBooks Section
+# ---- My Books Section ----- #
 @app.route('/')
 @app.route('/my_books')
 def my_books():
@@ -32,7 +33,7 @@ def insert_book():
     books.insert_one(request.form.to_dict())
     return redirect(url_for('my_books'))
 
-# Wishlist Section
+# ---- Wishlist Section ---- #
 @app.route('/wishlist')
 def wishlist():
     return render_template("wishlist.html", 
@@ -50,7 +51,7 @@ def insert_to_wishlist():
     purchases.insert_one(request.form.to_dict())
     return redirect(url_for('wishlist'))
 
-# MyBooks Functions for editing and deleting
+# ---- MyBooks Functions for editing and deleting ---- #
 @app.route('/edit_book/<book_id>')
 def edit_book(book_id):
     the_book = mongo.db.books.find_one({'_id': ObjectId(book_id)})
@@ -75,7 +76,7 @@ def delete_book(book_id):
     mongo.db.books.remove({'_id': ObjectId(book_id)})
     return redirect(url_for('my_books'))
   
-# Wishlist Functions for editing and deleting
+# ---- Wishlist Functions for editing and deleting ---- #
 @app.route('/edit_wishlist_entry/<purchase_id>')
 def edit_wishlist_entry(purchase_id):
     to_purchase = mongo.db.purchases.find_one({'_id': ObjectId(purchase_id)})
