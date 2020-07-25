@@ -219,7 +219,11 @@ Each book was stored separately in a collapsible in both the 'My Books' and 'Wis
 * This will be the same experience as the deleting a my book entry. 
 
 #### Websites & Devices Testing
-This site was tested on different devices such as a large desktop screen, laptop, Samsung S10+, Iphone 6/7/8, Ipad Pro and Ipad and on multiple web browsers such as Google Chrome and Firefox to make sure that it was responsive and compatible. I also had my friends and family tests it on their phones and laptops and it was responsive. One issue I had during testing was that on a mobile screen the collapsible header was not responsive due to too much text, I resolved this by getting a materialize helper to hide the rating of the book in the header on small screen, the user can still find the rating when he clicks on the collapsible in the body. Another minor issue that came up during testing was that when on a Galaxy Fold screen, the title would drop down from the logo, to rectify this a media query was inserted to remove the margin left.
+This site was tested on different devices such as a large desktop screen, laptop, Samsung S10+, Iphone 6/7/8, Ipad Pro and Ipad and on multiple web browsers such as Google Chrome and Firefox to make sure that it was responsive and compatible. I also had my friends and family tests it on their phones and laptops and it was responsive. 
+
+One issue I had during testing was that on a mobile screen the collapsible header was not responsive due to too much text, I resolved this by getting a materialize helper to hide the rating of the book in the header on small screen, the user can still find the rating when he clicks on the collapsible in the body. 
+
+Another minor issue that came up during testing was that when on a Galaxy Fold screen, the title would drop down from the logo, to rectify this a media query was inserted to remove the margin left.
 
 ## Deployment
 This app is hosted by GitHub Pages, it is directly deployed via the master branch and it was used for version control and commits and then pushed to a repository in Github.
