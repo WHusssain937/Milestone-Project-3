@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sriracha:100,200,300,400,500,600,700");
 
 /*--------------------------------------------Additional*/
+
 body {
   display: flex;
   min-height: 100vh;
@@ -40,11 +41,23 @@ main {
   margin-left: 1rem;
 }
 
+@media (max-width: 1024px) {
+  .title-icon {
+    margin-top: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .title-icon {
     margin-top: 1.1rem;
     margin-right: 0.75rem;
     margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .title-icon {
+    margin-left: 0;
   }
 }
 
